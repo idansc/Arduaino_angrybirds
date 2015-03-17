@@ -1,0 +1,7 @@
+﻿<Deployment xmlns="http://schemas.microsoft.com/client/2007/deployment" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" EntryPointAssembly="AngryPig" EntryPointType="AngryPig.AngryPigGame" RuntimeVersion="3.0">
+  <Deployment.Parts>
+    <AssemblyPart x:Name="AngryPig" Source="AngryPig.dll" />
+    <AssemblyPart x:Name="AngryPig.Data" Source="AngryPig.Data.dll" />
+    <AssemblyPart x:Name="FarseerPhysicsXNA" Source="FarseerPhysicsXNA.dll" />
+  </Deployment.Parts>
+</Deployment>

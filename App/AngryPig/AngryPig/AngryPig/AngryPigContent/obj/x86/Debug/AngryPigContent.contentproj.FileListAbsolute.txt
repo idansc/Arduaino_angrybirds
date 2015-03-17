@@ -1,0 +1,4 @@
+C:\Users\yufeih\Desktop\AngryPig\AngryPig\AngryPigContent\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\yufeih\Desktop\AngryPig\AngryPig\AngryPig\AngryPigContent\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\ischwart\Documents\Visual Studio 2010\Projects\AngryPig\AngryPig\AngryPig\AngryPigContent\obj\x86\Debug\AngryPigContent.contentprojResolveAssemblyReference.cache
+C:\Users\ischwart\Dropbox\Arduino proj\AngryPig\AngryPig\AngryPig\AngryPigContent\obj\x86\Debug\AngryPigContent.contentprojResolveAssemblyReference.cache

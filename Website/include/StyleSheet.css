@@ -1,0 +1,17 @@
+body {
+    direction: ltr
+}
+
+#centerArea{
+    margin: 0 auto;
+    width: 1817px;
+}
+
+#BGAngry {
+    background-image: url("/img/Angry_Birds.png");
+    width: 1817px;
+    height:  740px;
+}
+
+
+/*---------------*/

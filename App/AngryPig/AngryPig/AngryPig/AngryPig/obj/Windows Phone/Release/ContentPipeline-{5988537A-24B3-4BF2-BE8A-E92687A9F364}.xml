@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>Levels\Level.xaml</Source>
+      <Name>Levels\Level</Name>
+      <Importer>LevelImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ischwart\Dropbox\Arduino proj\ארודינו\App\AngryPig\AngryPig\AngryPig\AngryPig\bin\Windows Phone\Release\Content\Levels\Level.xnb</Output>
+      <Time>2015-03-10T23:12:38+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\RedBird.png</Source>
+      <Name>Textures\RedBird</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ischwart\Dropbox\Arduino proj\ארודינו\App\AngryPig\AngryPig\AngryPig\AngryPig\bin\Windows Phone\Release\Content\Textures\RedBird.xnb</Output>
+      <Time>2015-01-12T15:34:15+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Background.png</Source>
+      <Name>Textures\Background</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ischwart\Dropbox\Arduino proj\ארודינו\App\AngryPig\AngryPig\AngryPig\AngryPig\bin\Windows Phone\Release\Content\Textures\Background.xnb</Output>
+      <Time>2015-01-12T18:51:09+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Background_logo.png</Source>
+      <Name>Textures\Background_logo</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ischwart\Dropbox\Arduino proj\ארודינו\App\AngryPig\AngryPig\AngryPig\AngryPig\bin\Windows Phone\Release\Content\Textures\Background_logo.xnb</Output>
+      <Time>2015-01-14T11:18:15+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\GameThumbnail.png</Source>
+      <Name>Textures\GameThumbnail</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ischwart\Dropbox\Arduino proj\ארודינו\App\AngryPig\AngryPig\AngryPig\AngryPig\bin\Windows Phone\Release\Content\Textures\GameThumbnail.xnb</Output>
+      <Time>2015-03-16T10:06:48+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Background_logo_tech.png</Source>
+      <Name>Textures\Background_logo_tech</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ischwart\Dropbox\Arduino proj\ארודינו\App\AngryPig\AngryPig\AngryPig\AngryPig\bin\Windows Phone\Release\Content\Textures\Background_logo_tech.xnb</Output>
+      <Time>2015-03-16T10:13:13+02:00</Time>
+    </Item>
+    <Item>
+      <Source>courier.spritefont</Source>
+      <Name>courier</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ischwart\Dropbox\Arduino proj\ארודינו\App\AngryPig\AngryPig\AngryPig\AngryPig\bin\Windows Phone\Release\Content\courier.xnb</Output>
+      <Time>2015-03-13T13:18:36+02:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <ContentProjectGUID>{5988537A-24B3-4BF2-BE8A-E92687A9F364}</ContentProjectGUID>
+      <TargetPlatform>WindowsPhone</TargetPlatform>
+      <TargetProfile>Reach</TargetProfile>
+      <BuildConfiguration>Release</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>C:\Users\ischwart\Dropbox\Arduino proj\ארודינו\App\AngryPig\AngryPig\AngryPig\AngryPigContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\ischwart\Dropbox\Arduino proj\ארודינו\App\AngryPig\AngryPig\AngryPig\AngryPig\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\ischwart\Dropbox\Arduino proj\ארודינו\App\AngryPig\AngryPig\AngryPig\AngryPig\obj\Windows Phone\Release\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\ischwart\Dropbox\Arduino proj\ארודינו\App\AngryPig\AngryPig\AngryPig\AngryPig\bin\Windows Phone\Release\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\windows\Microsoft.Net\assembly\GAC_MSIL\WindowsBase\v4.0_4.0.0.0__31bf3856ad364e35\WindowsBase.dll</Key>
+        <Value>2013-09-12T08:33:38+03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\windows\Microsoft.Net\assembly\GAC_MSIL\UIAutomationTypes\v4.0_4.0.0.0__31bf3856ad364e35\UIAutomationTypes.dll</Key>
+        <Value>2013-09-12T08:33:38+03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\windows\Microsoft.Net\assembly\GAC_MSIL\UIAutomationProvider\v4.0_4.0.0.0__31bf3856ad364e35\UIAutomationProvider.dll</Key>
+        <Value>2013-09-12T08:33:38+03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\windows\Microsoft.Net\assembly\GAC_MSIL\PresentationUI\v4.0_4.0.0.0__31bf3856ad364e35\PresentationUI.dll</Key>
+        <Value>2013-09-12T08:33:38+03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\windows\Microsoft.Net\assembly\GAC_MSIL\ReachFramework\v4.0_4.0.0.0__31bf3856ad364e35\ReachFramework.dll</Key>
+        <Value>2013-09-12T08:33:38+03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\windows\Microsoft.Net\assembly\GAC_MSIL\PresentationFramework\v4.0_4.0.0.0__31bf3856ad364e35\PresentationFramework.dll</Key>
+        <Value>2013-09-12T08:33:38+03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\windows\Microsoft.Net\assembly\GAC_32\PresentationCore\v4.0_4.0.0.0__31bf3856ad364e35\PresentationCore.dll</Key>
+        <Value>2013-09-12T08:33:38+03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2011-09-01T17:22:30+03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2011-09-01T17:22:30+03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2011-09-01T17:22:30+03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2011-09-01T17:22:30+03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2011-09-01T17:22:30+03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2011-09-01T17:22:30+03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Users\ischwart\Dropbox\Arduino proj\ארודינו\App\AngryPig\AngryPig\AngryPig.Pipeline\bin\x86\Release\AngryPig.Pipeline.dll</Key>
+        <Value>2015-03-14T23:39:15+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\windows\Microsoft.Net\assembly\GAC_MSIL\Accessibility\v4.0_4.0.0.0__b03f5f7f11d50a3a\Accessibility.dll</Key>
+        <Value>2013-09-12T07:21:54+03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2015-03-09T23:11:57.8443591+02:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>

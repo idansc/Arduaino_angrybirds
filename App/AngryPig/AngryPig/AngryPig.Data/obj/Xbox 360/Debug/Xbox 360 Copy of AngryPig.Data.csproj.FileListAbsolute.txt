@@ -1,0 +1,6 @@
+C:\Users\yufeih\Desktop\AngryPig\AngryPig.Data\bin\Xbox 360\Debug\AngryPig.Data.dll
+C:\Users\yufeih\Desktop\AngryPig\AngryPig.Data\bin\Xbox 360\Debug\AngryPig.Data.pdb
+C:\Users\yufeih\Desktop\AngryPig\AngryPig.Data\obj\Xbox 360\Debug\ResolveAssemblyReference.cache
+C:\Users\yufeih\Desktop\AngryPig\AngryPig.Data\obj\Xbox 360\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\yufeih\Desktop\AngryPig\AngryPig.Data\obj\Xbox 360\Debug\AngryPig.Data.dll
+C:\Users\yufeih\Desktop\AngryPig\AngryPig.Data\obj\Xbox 360\Debug\AngryPig.Data.pdb

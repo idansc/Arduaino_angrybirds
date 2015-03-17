@@ -1,0 +1,17 @@
+C:\Users\yufeih\Desktop\AngryPig\AngryPig.Data\bin\Windows Phone\Debug\AngryPig.Data.dll
+C:\Users\yufeih\Desktop\AngryPig\AngryPig.Data\bin\Windows Phone\Debug\AngryPig.Data.pdb
+C:\Users\yufeih\Desktop\AngryPig\AngryPig.Data\obj\Windows Phone\Debug\ResolveAssemblyReference.cache
+C:\Users\yufeih\Desktop\AngryPig\AngryPig.Data\obj\Windows Phone\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\yufeih\Desktop\AngryPig\AngryPig.Data\obj\Windows Phone\Debug\AngryPig.Data.dll
+C:\Users\yufeih\Desktop\AngryPig\AngryPig.Data\obj\Windows Phone\Debug\AngryPig.Data.pdb
+C:\Users\ischwart\Documents\Visual Studio 2010\Projects\AngryPig\AngryPig\AngryPig.Data\bin\Windows Phone\Debug\AngryPig.Data.dll
+C:\Users\ischwart\Documents\Visual Studio 2010\Projects\AngryPig\AngryPig\AngryPig.Data\bin\Windows Phone\Debug\AngryPig.Data.pdb
+C:\Users\ischwart\Documents\Visual Studio 2010\Projects\AngryPig\AngryPig\AngryPig.Data\obj\Windows Phone\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\ischwart\Documents\Visual Studio 2010\Projects\AngryPig\AngryPig\AngryPig.Data\obj\Windows Phone\Debug\AngryPig.Data.dll
+C:\Users\ischwart\Documents\Visual Studio 2010\Projects\AngryPig\AngryPig\AngryPig.Data\obj\Windows Phone\Debug\AngryPig.Data.pdb
+C:\Users\ischwart\Documents\Visual Studio 2010\Projects\AngryPig\AngryPig\AngryPig.Data\obj\Windows Phone\Debug\Windows Phone Copy of AngryPig.Data.csprojResolveAssemblyReference.cache
+C:\Users\ischwart\Dropbox\Arduino proj\AngryPig\AngryPig\AngryPig.Data\bin\Windows Phone\Debug\AngryPig.Data.dll
+C:\Users\ischwart\Dropbox\Arduino proj\AngryPig\AngryPig\AngryPig.Data\bin\Windows Phone\Debug\AngryPig.Data.pdb
+C:\Users\ischwart\Dropbox\Arduino proj\AngryPig\AngryPig\AngryPig.Data\obj\Windows Phone\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\ischwart\Dropbox\Arduino proj\AngryPig\AngryPig\AngryPig.Data\obj\Windows Phone\Debug\AngryPig.Data.dll
+C:\Users\ischwart\Dropbox\Arduino proj\AngryPig\AngryPig\AngryPig.Data\obj\Windows Phone\Debug\AngryPig.Data.pdb

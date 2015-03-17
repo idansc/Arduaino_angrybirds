@@ -1,0 +1,7 @@
+C:\Users\ischwart\documents\visual studio 2010\Projects\AngryBirdsAzure\AngryBirdsAzure\bin\Release\ServiceConfiguration.cscfg
+C:\Users\ischwart\documents\visual studio 2010\Projects\AngryBirdsAzure\AngryBirdsAzure\bin\Release\ServiceDefinition.csdef
+C:\Users\ischwart\documents\visual studio 2010\Projects\AngryBirdsAzure\AngryBirdsAzure\obj\Release\WCFServiceWebRole1\bin\Microsoft.WindowsAzure.Diagnostics.dll
+C:\Users\ischwart\documents\visual studio 2010\Projects\AngryBirdsAzure\AngryBirdsAzure\obj\Release\WCFServiceWebRole1\bin\Microsoft.WindowsAzure.Diagnostics.StorageUtility.dll
+C:\Users\ischwart\documents\visual studio 2010\Projects\AngryBirdsAzure\AngryBirdsAzure\obj\Release\WCFServiceWebRole1\bin\Microsoft.WindowsAzure.Diagnostics.xml
+C:\Users\ischwart\documents\visual studio 2010\Projects\AngryBirdsAzure\AngryBirdsAzure\obj\Release\WCFServiceWebRole1\bin\WCFServiceWebRole1.dll
+C:\Users\ischwart\documents\visual studio 2010\Projects\AngryBirdsAzure\AngryBirdsAzure\obj\Release\WCFServiceWebRole1\bin\WCFServiceWebRole1.pdb

@@ -1,0 +1,12 @@
+C:\Users\ischwart\Dropbox\Arduino proj\AngryPig\AngryPig\AngryPig.Data\bin\Windows Phone\Release\AngryPig.Data.dll
+C:\Users\ischwart\Dropbox\Arduino proj\AngryPig\AngryPig\AngryPig.Data\bin\Windows Phone\Release\AngryPig.Data.pdb
+C:\Users\ischwart\Dropbox\Arduino proj\AngryPig\AngryPig\AngryPig.Data\obj\Windows Phone\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\ischwart\Dropbox\Arduino proj\AngryPig\AngryPig\AngryPig.Data\obj\Windows Phone\Release\AngryPig.Data.dll
+C:\Users\ischwart\Dropbox\Arduino proj\AngryPig\AngryPig\AngryPig.Data\obj\Windows Phone\Release\AngryPig.Data.pdb
+C:\Users\ischwart\Dropbox\Arduino proj\AngryPig\AngryPig\AngryPig.Data\obj\Windows Phone\Release\Windows Phone Copy of AngryPig.Data.csprojResolveAssemblyReference.cache
+C:\Users\ischwart\Dropbox\Arduino proj\ארודינו\App\AngryPig\AngryPig\AngryPig.Data\bin\Windows Phone\Release\AngryPig.Data.dll
+C:\Users\ischwart\Dropbox\Arduino proj\ארודינו\App\AngryPig\AngryPig\AngryPig.Data\bin\Windows Phone\Release\AngryPig.Data.pdb
+C:\Users\ischwart\Dropbox\Arduino proj\ארודינו\App\AngryPig\AngryPig\AngryPig.Data\obj\Windows Phone\Release\Windows Phone Copy of AngryPig.Data.csprojResolveAssemblyReference.cache
+C:\Users\ischwart\Dropbox\Arduino proj\ארודינו\App\AngryPig\AngryPig\AngryPig.Data\obj\Windows Phone\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\ischwart\Dropbox\Arduino proj\ארודינו\App\AngryPig\AngryPig\AngryPig.Data\obj\Windows Phone\Release\AngryPig.Data.dll
+C:\Users\ischwart\Dropbox\Arduino proj\ארודינו\App\AngryPig\AngryPig\AngryPig.Data\obj\Windows Phone\Release\AngryPig.Data.pdb

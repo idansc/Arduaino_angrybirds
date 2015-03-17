@@ -1,0 +1,21 @@
+C:\Users\yufeih\Desktop\AngryPig\AngryPig.Pipeline\bin\x86\Debug\AngryPig.Pipeline.dll
+C:\Users\yufeih\Desktop\AngryPig\AngryPig.Pipeline\bin\x86\Debug\AngryPig.Pipeline.pdb
+C:\Users\yufeih\Desktop\AngryPig\AngryPig.Pipeline\bin\x86\Debug\AngryPig.Data.dll
+C:\Users\yufeih\Desktop\AngryPig\AngryPig.Pipeline\bin\x86\Debug\AngryPig.Data.pdb
+C:\Users\yufeih\Desktop\AngryPig\AngryPig.Pipeline\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\yufeih\Desktop\AngryPig\AngryPig.Pipeline\obj\x86\Debug\AngryPig.Pipeline.dll
+C:\Users\yufeih\Desktop\AngryPig\AngryPig.Pipeline\obj\x86\Debug\AngryPig.Pipeline.pdb
+C:\Users\ischwart\Documents\Visual Studio 2010\Projects\AngryPig\AngryPig\AngryPig.Pipeline\bin\x86\Debug\AngryPig.Pipeline.dll
+C:\Users\ischwart\Documents\Visual Studio 2010\Projects\AngryPig\AngryPig\AngryPig.Pipeline\bin\x86\Debug\AngryPig.Pipeline.pdb
+C:\Users\ischwart\Documents\Visual Studio 2010\Projects\AngryPig\AngryPig\AngryPig.Pipeline\bin\x86\Debug\AngryPig.Data.dll
+C:\Users\ischwart\Documents\Visual Studio 2010\Projects\AngryPig\AngryPig\AngryPig.Pipeline\bin\x86\Debug\AngryPig.Data.pdb
+C:\Users\ischwart\Documents\Visual Studio 2010\Projects\AngryPig\AngryPig\AngryPig.Pipeline\obj\x86\Debug\AngryPig.Pipeline.csprojResolveAssemblyReference.cache
+C:\Users\ischwart\Documents\Visual Studio 2010\Projects\AngryPig\AngryPig\AngryPig.Pipeline\obj\x86\Debug\AngryPig.Pipeline.dll
+C:\Users\ischwart\Documents\Visual Studio 2010\Projects\AngryPig\AngryPig\AngryPig.Pipeline\obj\x86\Debug\AngryPig.Pipeline.pdb
+C:\Users\ischwart\Dropbox\Arduino proj\AngryPig\AngryPig\AngryPig.Pipeline\bin\x86\Debug\AngryPig.Pipeline.dll
+C:\Users\ischwart\Dropbox\Arduino proj\AngryPig\AngryPig\AngryPig.Pipeline\bin\x86\Debug\AngryPig.Pipeline.pdb
+C:\Users\ischwart\Dropbox\Arduino proj\AngryPig\AngryPig\AngryPig.Pipeline\bin\x86\Debug\AngryPig.Data.dll
+C:\Users\ischwart\Dropbox\Arduino proj\AngryPig\AngryPig\AngryPig.Pipeline\bin\x86\Debug\AngryPig.Data.pdb
+C:\Users\ischwart\Dropbox\Arduino proj\AngryPig\AngryPig\AngryPig.Pipeline\obj\x86\Debug\AngryPig.Pipeline.csprojResolveAssemblyReference.cache
+C:\Users\ischwart\Dropbox\Arduino proj\AngryPig\AngryPig\AngryPig.Pipeline\obj\x86\Debug\AngryPig.Pipeline.dll
+C:\Users\ischwart\Dropbox\Arduino proj\AngryPig\AngryPig\AngryPig.Pipeline\obj\x86\Debug\AngryPig.Pipeline.pdb

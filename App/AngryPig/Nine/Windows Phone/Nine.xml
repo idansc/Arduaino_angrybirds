@@ -1,0 +1,3469 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Nine</name>
+    </assembly>
+    <members>
+        <member name="T:Nine.BounceCurveReader">
+            <summary>
+            Content reader for <c>BounceCurve</c>.
+            </summary>
+        </member>
+        <member name="T:Nine.CustomCurveReader">
+            <summary>
+            Content reader for <c>CustomCurve</c>.
+            </summary>
+        </member>
+        <member name="T:Nine.ElasticCurveReader">
+            <summary>
+            Content reader for <c>ElasticCurve</c>.
+            </summary>
+        </member>
+        <member name="T:Nine.ExponentialCurveReader">
+            <summary>
+            Content reader for <c>ExponentialCurve</c>.
+            </summary>
+        </member>
+        <member name="T:Nine.GridSceneManagerReader`1">
+            <summary>
+            Content reader for <c>GridSceneManager`1</c>.
+            </summary>
+        </member>
+        <member name="T:Nine.LinearCurveReader">
+            <summary>
+            Content reader for <c>LinearCurve</c>.
+            </summary>
+        </member>
+        <member name="T:Nine.SinCurveReader">
+            <summary>
+            Content reader for <c>SinCurve</c>.
+            </summary>
+        </member>
+        <member name="T:Nine.SmoothCurveReader">
+            <summary>
+            Content reader for <c>SmoothCurve</c>.
+            </summary>
+        </member>
+        <member name="T:Nine.UniformGridReader">
+            <summary>
+            Content reader for <c>UniformGrid</c>.
+            </summary>
+        </member>
+        <member name="T:Nine.Animations.AnimationPlayerReader">
+            <summary>
+            Content reader for <c>AnimationPlayer</c>.
+            </summary>
+        </member>
+        <member name="T:Nine.Animations.DelayAnimationReader">
+            <summary>
+            Content reader for <c>DelayAnimation</c>.
+            </summary>
+        </member>
+        <member name="T:Nine.Animations.LayeredAnimationReader">
+            <summary>
+            Content reader for <c>LayeredAnimation</c>.
+            </summary>
+        </member>
+        <member name="T:Nine.Animations.SequentialAnimationReader">
+            <summary>
+            Content reader for <c>SequentialAnimation</c>.
+            </summary>
+        </member>
+        <member name="T:Nine.Animations.TweenAnimationReader`1">
+            <summary>
+            Content reader for <c>TweenAnimation`1</c>.
+            </summary>
+        </member>
+        <member name="T:Nine.IComponent">
+            <summary>
+            Defines the protocal for game objects to interact with each other.
+            </summary>
+        </member>
+        <member name="P:Nine.IComponent.Parent">
+            <summary>
+            Gets or sets the parent of this game object. 
+            </summary>
+            <remarks>
+            After this game object is added to the parent container object, 
+            the parent object is responsable for setting the Parent property
+            of the child game object. 
+            This property should never be modified elsewhere.
+            You can always trust a valid parent is set when implementing a 
+            game object.
+            </remarks>
+        </member>
+        <member name="T:Nine.Component">
+            <summary>
+            Defines a basic game component that can be added to a parent game object.
+            </summary>
+        </member>
+        <member name="M:Nine.Component.OnAdded(Nine.WorldObject)">
+            <summary>
+            Called when this game component is added to a parent game object.
+            </summary>
+        </member>
+        <member name="M:Nine.Component.OnRemoved(Nine.WorldObject)">
+            <summary>
+            Called when this game component is removed from a parent game object.
+            </summary>
+        </member>
+        <member name="M:Nine.Component.ToString">
+            <summary>
+            Returns a <see cref="T:System.String"/> that represents this instance.
+            </summary>
+        </member>
+        <member name="P:Nine.Component.Name">
+            <summary>
+            Gets or sets the name of this game object.
+            </summary>
+        </member>
+        <member name="P:Nine.Component.Tag">
+            <summary>
+            Gets or sets the tag.
+            </summary>
+        </member>
+        <member name="P:Nine.Component.Parent">
+            <summary>
+            Gets the parent of this game object.
+            </summary>
+        </member>
+        <member name="P:Nine.Component.World">
+            <summary>
+            Gets the parent world of this game object.
+            </summary>
+        </member>
+        <member name="T:Nine.Components.GameComponentCollectionExtensions">
+            <summary>
+            Contains extension methods related to GameComponentCollection.
+            </summary>
+        </member>
+        <member name="T:Nine.ContentManagerExtensions">
+            <summary>
+            Contains extension methods for ContentManager.
+            </summary>
+        </member>
+        <member name="M:Nine.ContentManagerExtensions.Create``1(Microsoft.Xna.Framework.Content.ContentManager,System.String)">
+            <summary>
+            Creates a new instance of an asset that has been processed by the Content Pipeline.
+            </summary>
+        </member>
+        <member name="T:Nine.ContentFactory">
+            <summary>
+            Defines a content manager that can create a new instance for the same asset name.
+            </summary>
+        </member>
+        <member name="T:Nine.GridSceneManager`1">
+            <summary>
+            Manages a collection of objects using grids.
+            </summary>
+        </member>
+        <member name="T:Nine.UniformGrid">
+            <summary>
+            Basic 2D Space partition using uniform grids.
+            </summary>
+        </member>
+        <member name="M:Nine.UniformGrid.#ctor(System.Single,System.Single,System.Single,System.Single,System.Int32,System.Int32)">
+            <summary>
+            Creates a new grid.
+            </summary>
+        </member>
+        <member name="M:Nine.UniformGrid.#ctor(System.Single,System.Single,System.Single,System.Int32,System.Int32)">
+            <summary>
+            Creates a new grid.
+            </summary>
+        </member>
+        <member name="M:Nine.UniformGrid.#ctor(Nine.BoundingRectangle,System.Int32,System.Int32)">
+            <summary>
+            Creates a new grid.
+            </summary>
+        </member>
+        <member name="M:Nine.UniformGrid.Contains(System.Single,System.Single)">
+            <summary>
+            Gets whether the grid contains the specified position.
+            </summary>
+        </member>
+        <member name="M:Nine.UniformGrid.Contains(Microsoft.Xna.Framework.Vector2)">
+            <summary>
+            Gets whether the grid contains the specified position.
+            </summary>
+        </member>
+        <member name="M:Nine.UniformGrid.Contains(System.Int32,System.Int32)">
+            <summary>
+            Gets whether the grid contains the specified index.
+            </summary>
+        </member>
+        <member name="M:Nine.UniformGrid.Clamp(System.Single,System.Single)">
+            <summary>
+            Clamps positions into the boundary.
+            </summary>
+        </member>
+        <member name="M:Nine.UniformGrid.Clamp(Microsoft.Xna.Framework.Vector2)">
+            <summary>
+            Clamps positions into the boundary.
+            </summary>
+        </member>
+        <member name="M:Nine.UniformGrid.PositionToSegment(System.Single,System.Single)">
+            <summary>
+            Converts from world space to integral grid space.
+            </summary>
+            <param name="x"></param>
+            <param name="y"></param>
+        </member>
+        <member name="M:Nine.UniformGrid.PositionToSegment(Microsoft.Xna.Framework.Vector2)">
+            <summary>
+            Converts from world space to integral grid space.
+            </summary>
+        </member>
+        <member name="M:Nine.UniformGrid.SegmentToPosition(System.Int32,System.Int32)">
+            <summary>
+            Gets the center position of the specified integral grid.
+            </summary>
+        </member>
+        <member name="M:Nine.UniformGrid.SegmentToPosition(Microsoft.Xna.Framework.Point)">
+            <summary>
+            Gets the center position of the specified integral grid.
+            </summary>
+        </member>
+        <member name="M:Nine.UniformGrid.GetSegmentBounds(System.Int32,System.Int32)">
+            <summary>
+            Gets the bounding rectangle of the specified integral grid.
+            </summary>
+        </member>
+        <member name="M:Nine.UniformGrid.Traverse(Microsoft.Xna.Framework.Vector3,Microsoft.Xna.Framework.Vector3,System.Predicate{Microsoft.Xna.Framework.Point})">
+            <summary>
+            Returns an enumeration of grids overlapping the specified bounds.
+            </summary>
+        </member>
+        <member name="M:Nine.UniformGrid.Traverse(Microsoft.Xna.Framework.BoundingBox,System.Predicate{Microsoft.Xna.Framework.Point})">
+            <summary>
+            Returns an enumeration of grids overlapping the specified bounds.
+            </summary>
+        </member>
+        <member name="M:Nine.UniformGrid.Traverse(System.Int32,System.Int32,System.Predicate{Microsoft.Xna.Framework.Point})">
+            <summary>
+            Returns an enumeration of grids that floods from the specified position to the outside.
+            </summary>
+        </member>
+        <member name="M:Nine.UniformGrid.Traverse(Microsoft.Xna.Framework.Point,Microsoft.Xna.Framework.Point,System.Predicate{Microsoft.Xna.Framework.Point})">
+            <summary>
+            Returns an enumeration of grids overlapping the specified line.
+            </summary>
+        </member>
+        <member name="M:Nine.UniformGrid.Traverse(Microsoft.Xna.Framework.Ray,System.Single,System.Predicate{Microsoft.Xna.Framework.Point})">
+            <summary>
+            Returns an enumeration of grids overlapping the specified ray.
+            </summary>
+            <param name="ray"></param>
+            <param name="smallestPickableSize">
+            The precision of line picking. A recommended value is half the radius of the
+            smallest object to be picked.
+            </param>
+        </member>
+        <member name="M:Nine.UniformGrid.Traverse(Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Vector2,System.Single,System.Predicate{Microsoft.Xna.Framework.Point})">
+            <summary>
+            Returns an enumeration of grids overlapping the specified line.
+            </summary>
+            <param name="begin"></param>
+            <param name="end"></param>
+            <param name="smallestPickableSize">
+            The precision of line picking. A recommended value is half the radius of the
+            smallest object to be picked.
+            </param>
+        </member>
+        <member name="P:Nine.UniformGrid.SegmentCountX">
+            <summary>
+            Gets or sets the number of columns (x) of the grid.
+            </summary>
+        </member>
+        <member name="P:Nine.UniformGrid.SegmentCountY">
+            <summary>
+            Gets or sets the number of rows (y) of the grid.
+            </summary>
+        </member>
+        <member name="P:Nine.UniformGrid.Position">
+            <summary>
+            Gets or sets the top left position of the grid.
+            </summary>
+        </member>
+        <member name="P:Nine.UniformGrid.Size">
+            <summary>
+            Gets the width and height of the grid.
+            </summary>
+        </member>
+        <member name="T:Nine.ISceneManager`1">
+            <summary>
+            Interface for a scene manager that manages the spatial relationships
+            between objects.
+            </summary>
+        </member>
+        <member name="T:Nine.ISpatialQuery`1">
+            <summary>
+            Defines Spatial relations between objects.
+            </summary>
+        </member>
+        <member name="M:Nine.ISpatialQuery`1.FindAll(Microsoft.Xna.Framework.Ray@,System.Collections.Generic.ICollection{`0})">
+            <summary>
+            Finds all the objects that intersects with the specified ray.
+            </summary>
+            <param name="result">The caller is responsable for clearing the result collection</param>
+        </member>
+        <member name="M:Nine.ISpatialQuery`1.FindAll(Microsoft.Xna.Framework.BoundingSphere@,System.Collections.Generic.ICollection{`0})">
+            <summary>
+            Finds all the objects resides within the specified bounding sphere.
+            </summary>
+            <param name="result">The caller is responsable for clearing the result collection</param>
+        </member>
+        <member name="M:Nine.ISpatialQuery`1.FindAll(Microsoft.Xna.Framework.BoundingBox@,System.Collections.Generic.ICollection{`0})">
+            <summary>
+            Finds all the objects that intersects with the specified bounding box.
+            </summary>
+            <param name="result">The caller is responsable for clearing the result collection</param>
+        </member>
+        <member name="M:Nine.ISpatialQuery`1.FindAll(Microsoft.Xna.Framework.BoundingFrustum@,System.Collections.Generic.ICollection{`0})">
+            <summary>
+            Finds all the objects resides within the specified bounding frustum.
+            </summary>
+            <param name="result">The caller is responsable for clearing the result collection</param>
+        </member>
+        <member name="M:Nine.GridSceneManager`1.#ctor(System.Single,System.Single,System.Single,System.Single,System.Int32,System.Int32)">
+            <summary>
+            Creates a new instance of GridSceneManager.
+            </summary>
+        </member>
+        <member name="M:Nine.GridSceneManager`1.#ctor(Nine.BoundingRectangle,System.Int32,System.Int32)">
+            <summary>
+            Creates a new instance of GridSceneManager.
+            </summary>
+        </member>
+        <member name="M:Nine.GridSceneManager`1.#ctor(Microsoft.Xna.Framework.BoundingBox,System.Int32,System.Int32)">
+            <summary>
+            Creates a new instance of GridSceneManager.
+            </summary>
+        </member>
+        <member name="M:Nine.GridSceneManager`1.Clear">
+            <summary>
+            Clear all objects managed by this instance.
+            </summary>
+        </member>
+        <member name="M:Nine.GridSceneManager`1.System#Collections#Generic#ICollection{T}#Add(`0)">
+            <summary>
+            This method will always throw an InvalidOperationException().
+            Use the other overload instead.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "T:Nine.HashSet`1" -->
+        <member name="T:Nine.SilverlightInputSource">
+            <summary>
+            Input source for silverlight on Windows Phone.
+            </summary>
+        </member>
+        <member name="T:Nine.IInputSource">
+            <summary>
+            Defines the source that triggers the input.
+            </summary>
+        </member>
+        <member name="P:Nine.IInputSource.MouseState">
+            <summary>
+            Gets the state of the mouse.
+            </summary>
+        </member>
+        <member name="P:Nine.IInputSource.KeyboardState">
+            <summary>
+            Gets the state of the keyboard.
+            </summary>
+        </member>
+        <member name="E:Nine.IInputSource.KeyDown">
+            <summary>
+            Occurs when a key is been pressed.
+            </summary>
+        </member>
+        <member name="E:Nine.IInputSource.KeyUp">
+            <summary>
+            Occurs when a key is been released.
+            </summary>
+        </member>
+        <member name="E:Nine.IInputSource.MouseDown">
+            <summary>
+            Occurs when a mouse button is been pressed.
+            </summary>
+        </member>
+        <member name="E:Nine.IInputSource.MouseUp">
+            <summary>
+            Occurs when a mouse button is been released.
+            </summary>
+        </member>
+        <member name="E:Nine.IInputSource.MouseWheel">
+            <summary>
+            Occurs when the mouse scrolled.
+            </summary>
+        </member>
+        <member name="E:Nine.IInputSource.MouseMove">
+            <summary>
+            Occurs when the mouse moved.
+            </summary>
+        </member>
+        <member name="M:Nine.SilverlightInputSource.#ctor(System.Windows.UIElement)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Nine.SilverlightInputSource"/> class.
+            </summary>
+            <param name="control">The control.</param>
+        </member>
+        <member name="P:Nine.SilverlightInputSource.MouseState">
+            <summary>
+            Gets the state of the mouse.
+            </summary>
+        </member>
+        <member name="P:Nine.SilverlightInputSource.KeyboardState">
+            <summary>
+            Gets the state of the keyboard.
+            </summary>
+        </member>
+        <member name="T:Nine.Input">
+            <summary>
+            A basic class that pushes input events to the consumer.
+            </summary>
+            <remarks>
+            Before you create <c>Input</c> object, make sure a valid
+            <c>InputComponent</c> object is created.
+            
+            You can create as many <c>Input</c> instances any where
+            without worrying much about performance and memory leak.
+            
+            However, <b>you need to explicitly keep an reference on Input instances</b>,
+            otherwise the garbage collector may collect the instance and
+            no events will be raised after that.
+            </remarks>
+            
+            <example>
+            The following code will explode a potential bug
+            when the application runs for certain period and the garbage
+            collector starts to collect unused resource, by then, the
+            input events will no longer be raised any more:
+            <code>
+            class EventListener
+            {
+                public EventListener()
+                {
+                    Input input = new Input();
+                    input.MouseDown += new EventHandler(input_MouseDown);
+                }
+            
+                void input_MouseDown(object sender, MouseEventArgs e)
+                {
+                    // This method won't be called after garbage collection.
+                }
+            }
+            </code>
+            </example>
+            
+            <example>
+            To solve this problem, promote input from local variable to member by
+            explicitly keeping a reference to it:
+            <code>
+            class EventListener
+            {
+                Input input;
+                
+                public EventListener()
+                {
+                    input = new Input();
+                    input.MouseDown += new EventHandler(input_MouseDown);
+                }
+            
+                void input_MouseDown(object sender, MouseEventArgs e)
+                {
+                    // This method works fine.
+                }
+            }
+            </code>
+            </example>
+        </member>
+        <member name="F:Nine.Input.Component">
+            <summary>
+            Gets the InputComponent associated with this instance.
+            </summary>
+        </member>
+        <member name="M:Nine.Input.#ctor">
+            <summary>
+            Creates a new instance of Input.
+            </summary>
+        </member>
+        <member name="M:Nine.Input.#ctor(Nine.InputComponent)">
+            <summary>
+            Creates a new instance of Input.
+            </summary>
+        </member>
+        <member name="M:Nine.Input.IsSpecialKey(Microsoft.Xna.Framework.Input.Keys)">
+            <summary>
+            All keys except A-Z, 0-9 and `-\[];',./= (and space) are special keys.
+            With shift pressed this also results in this keys:
+            </summary>
+        </member>
+        <member name="M:Nine.Input.KeyToChar(Microsoft.Xna.Framework.Input.Keys,System.Boolean)">
+            <summary>
+            Key to char helper conversion method.
+            Note: If the keys are mapped other than on a default QWERTY
+            keyboard, this method will not work properly. Most keyboards
+            will return the same for A-Z and 0-9, but the special keys
+            might be different.
+            </summary>
+        </member>
+        <member name="M:Nine.Input.CatchKeyboardInput(System.String@,System.Int32)">
+            <summary>
+            Handle keyboard input helper method to catch keyboard input
+            for an input text. Only used to enter the player name in the game.
+            </summary>
+        </member>
+        <member name="P:Nine.Input.Enabled">
+            <summary>
+            Gets or sets whether this instance will raise input events.
+            </summary>
+        </member>
+        <member name="P:Nine.Input.EnabledGestures">
+            <summary>
+            Gets or sets enabled gestures handles by this input.
+            </summary>
+            <remarks>
+            You can choose to handle gestures either using the method provided by <c>Input</c>
+            or manually detect it using <c>TouchPanel</c>. But these two methods don't work
+            together with each other. By setting this <c>Input.EnabledGestures</c> property,
+            you indicate that you are going to handle gestures using the event model provided
+            by Engine Nine across your whole application, in which case you may fail to read
+            gestures using <c>TouchPanel.ReadGesture</c> method.
+            </remarks>
+        </member>
+        <member name="P:Nine.Input.PlayerIndex">
+            <summary>
+            Gets or sets the player index to which this <c>Input</c> class will respond to.
+            A value of null represents this instance will respond to all player inputs.
+            </summary>
+        </member>
+        <member name="P:Nine.Input.GamePadState">
+            <summary>
+            Gets the current gamePad state.
+            </summary>
+        </member>
+        <member name="P:Nine.Input.KeyboardState">
+            <summary>
+            Gets the current keyboard state.
+            </summary>
+        </member>
+        <member name="P:Nine.Input.MouseState">
+            <summary>
+            Gets the current mouse state.
+            </summary>
+        </member>
+        <member name="E:Nine.Input.KeyDown">
+            <summary>
+            Occurs when a key is been pressed.
+            </summary>
+        </member>
+        <member name="E:Nine.Input.KeyUp">
+            <summary>
+            Occurs when a key is been released.
+            </summary>
+        </member>
+        <member name="E:Nine.Input.MouseDown">
+            <summary>
+            Occurs when a mouse button is been pressed.
+            </summary>
+        </member>
+        <member name="E:Nine.Input.MouseUp">
+            <summary>
+            Occurs when a mouse button is been released.
+            </summary>
+        </member>
+        <member name="E:Nine.Input.MouseWheel">
+            <summary>
+            Occurs when the mouse scrolled.
+            </summary>
+        </member>
+        <member name="E:Nine.Input.MouseMove">
+            <summary>
+            Occurs when the mouse moved.
+            </summary>
+        </member>
+        <member name="E:Nine.Input.Update">
+            <summary>
+            Occurs when the game update itself.
+            </summary>
+        </member>
+        <member name="E:Nine.Input.ButtonDown">
+            <summary>
+            Occurs when a gamepad used by the current <c>PlayerIndex</c> has just been pressed.
+            </summary>
+        </member>
+        <member name="E:Nine.Input.ButtonUp">
+            <summary>
+            Occurs when a gamepad used by the current <c>PlayerIndex</c> has just been released.
+            </summary>
+        </member>
+        <member name="E:Nine.Input.GestureSampled">
+            <summary>
+            Occurs when a new gesture has been sampled.
+            </summary>
+        </member>
+        <member name="T:Nine.InputComponent">
+            <summary>
+            An input component that manages a set of <c>Input</c> instances based on push model.
+            </summary>
+        </member>
+        <member name="T:Nine.IUpdateable">
+            <summary>
+            Object that react to game updates.
+            </summary>
+        </member>
+        <member name="M:Nine.IUpdateable.Update(System.TimeSpan)">
+            <summary>
+            Updates the internal state of the object based on game time.
+            </summary>
+        </member>
+        <member name="M:Nine.InputComponent.#ctor">
+            <summary>
+            Creates a new instance of InputComponent.
+            </summary>
+        </member>
+        <member name="M:Nine.InputComponent.#ctor(System.IntPtr)">
+            <summary>
+            Creates a new instance of InputComponent using the input system of windows forms.
+            </summary>
+            <param name="handle">Handle of the game window</param>
+        </member>
+        <member name="M:Nine.InputComponent.#ctor(Nine.IInputSource)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Nine.InputComponent"/> class.
+            </summary>
+        </member>
+        <member name="M:Nine.InputComponent.Update(System.TimeSpan)">
+            <summary>
+            Will catch all new states for keyboard, mouse and the gamepad.
+            </summary>
+        </member>
+        <member name="P:Nine.InputComponent.Current">
+            <summary>
+            Gets or sets the InputComponent for current context.
+            </summary>
+        </member>
+        <member name="P:Nine.InputComponent.RaiseMode">
+            <summary>
+            Gets or sets the raise mode.
+            </summary>
+        </member>
+        <member name="T:Nine.KeyboardEventArgs">
+            <summary>
+            Event args use for keyboard events.
+            </summary>
+        </member>
+        <member name="M:Nine.KeyboardEventArgs.#ctor">
+            <summary>
+            Creates a new instance of KeyboardEventArgs.
+            </summary>
+        </member>
+        <member name="M:Nine.KeyboardEventArgs.#ctor(Microsoft.Xna.Framework.Input.Keys)">
+            <summary>
+            Creates a new instance of KeyboardEventArgs.
+            </summary>
+        </member>
+        <member name="P:Nine.KeyboardEventArgs.Key">
+            <summary>
+            Gets the key been pressed or released.
+            </summary>
+        </member>
+        <member name="P:Nine.KeyboardEventArgs.KeyboardState">
+            <summary>
+            Gets the current keyboard state.
+            </summary>
+        </member>
+        <member name="P:Nine.KeyboardEventArgs.Handled">
+            <summary>
+            Gets or sets whether this event has been handled.
+            Handled events will stop propagation to the next input container.
+            </summary>
+        </member>
+        <member name="T:Nine.MouseButtons">
+            <summary>
+            Defines the three mouse buttons.
+            </summary>
+        </member>
+        <member name="F:Nine.MouseButtons.Left">
+            <summary>
+            Defines the mouse left button.
+            </summary>
+        </member>
+        <member name="F:Nine.MouseButtons.Right">
+            <summary>
+            Defines the mouse right button.
+            </summary>
+        </member>
+        <member name="F:Nine.MouseButtons.Middle">
+            <summary>
+            Defines the mouse middle button.
+            </summary>
+        </member>
+        <member name="T:Nine.MouseEventArgs">
+            <summary>
+            EventArgs use for mouse events.
+            </summary>
+        </member>
+        <member name="M:Nine.MouseEventArgs.IsButtonDown(Nine.MouseButtons)">
+            <summary>
+            Gets whether the specified button is pressed.
+            </summary>
+        </member>
+        <member name="M:Nine.MouseEventArgs.IsButtonUp(Nine.MouseButtons)">
+            <summary>
+            Gets whether the specified button is released.
+            </summary>
+        </member>
+        <member name="M:Nine.MouseEventArgs.#ctor">
+            <summary>
+            Creates a new instance of MouseEventArgs.
+            </summary>
+        </member>
+        <member name="M:Nine.MouseEventArgs.#ctor(Nine.MouseButtons,System.Int32,System.Int32,System.Single)">
+            <summary>
+            Creates a new instance of MouseEventArgs.
+            </summary>
+        </member>
+        <member name="P:Nine.MouseEventArgs.Button">
+            <summary>
+            Gets the mouse button been pressed or released.
+            </summary>
+        </member>
+        <member name="P:Nine.MouseEventArgs.X">
+            <summary>
+            Gets the X position of the mouse in game window client space.
+            </summary>
+        </member>
+        <member name="P:Nine.MouseEventArgs.Y">
+            <summary>
+            Gets the Y position of the mouse in game window client space.
+            </summary>
+        </member>
+        <member name="P:Nine.MouseEventArgs.Position">
+            <summary>
+            Gets the position of the mouse in game window client space.
+            </summary>
+        </member>
+        <member name="P:Nine.MouseEventArgs.WheelDelta">
+            <summary>
+            Gets the delta amount of mouse wheel.
+            </summary>
+        </member>
+        <member name="P:Nine.MouseEventArgs.MouseState">
+            <summary>
+            Gets the current mouse state.
+            </summary>
+        </member>
+        <member name="P:Nine.MouseEventArgs.Handled">
+            <summary>
+            Gets or sets whether this event has been handled.
+            Handled events will stop propagation to the next input container.
+            </summary>
+        </member>
+        <member name="T:Nine.GamePadEventArgs">
+            <summary>
+            EventArgs use for gamepad events.
+            </summary>
+        </member>
+        <member name="M:Nine.GamePadEventArgs.#ctor">
+            <summary>
+            Creates a new instance of GamePadEventArgs.
+            </summary>
+        </member>
+        <member name="P:Nine.GamePadEventArgs.Button">
+            <summary>
+            Gets the gamepad button been pressed or released.
+            </summary>
+        </member>
+        <member name="P:Nine.GamePadEventArgs.PlayerIndex">
+            <summary>
+            Gets which player has triggered the event.
+            </summary>
+        </member>
+        <member name="P:Nine.GamePadEventArgs.GamePadState">
+            <summary>
+            Gets the current gamepad state.
+            </summary>
+        </member>
+        <member name="P:Nine.GamePadEventArgs.Handled">
+            <summary>
+            Gets or sets whether this event has been handled.
+            Handled events will stop propagation to the next input container.
+            </summary>
+        </member>
+        <member name="T:Nine.GestureEventArgs">
+            <summary>
+            EventArgs use for touch gesture events.
+            </summary>
+        </member>
+        <member name="M:Nine.GestureEventArgs.#ctor">
+            <summary>
+            Creates a new instance of GamePadEventArgs.
+            </summary>
+        </member>
+        <member name="P:Nine.GestureEventArgs.GestureType">
+            <summary>
+            Gets the gesture type.
+            </summary>
+        </member>
+        <member name="P:Nine.GestureEventArgs.GestureSample">
+            <summary>
+            Gets the detailed gesture sample.
+            </summary>
+        </member>
+        <member name="P:Nine.GestureEventArgs.Handled">
+            <summary>
+            Gets or sets whether this event has been handled.
+            Handled events will stop propagation to the next input container.
+            </summary>
+        </member>
+        <member name="F:Nine.XnaInputSource.mouseState">
+            <summary>
+            Mouse state, set every frame in the Update method.
+            </summary>
+        </member>
+        <member name="F:Nine.XnaInputSource.mouseStateLastFrame">
+            <summary>
+            Mouse state, set every frame in the Update method.
+            </summary>
+        </member>
+        <member name="F:Nine.XnaInputSource.keyboardState">
+            <summary>
+            Keyboard state, set every frame in the Update method.
+            Note: KeyboardState is a class and not a struct,
+            we have to initialize it here, else we might run into trouble when
+            accessing any keyboardState data before BaseGame.Update() is called.
+            We can also NOT use the last state because every time we call
+            Keyboard.GetState() the old state is useless (see XNA help for more
+            information, section Input). We store our own array of keys from
+            the last frame for comparing stuff.
+            </summary>
+        </member>
+        <member name="F:Nine.XnaInputSource.keysPressedLastFrame">
+            <summary>
+            Keys pressed last frame, for comparison if a key was just pressed.
+            </summary>
+        </member>
+        <member name="F:Nine.XnaInputSource.mouseWheelDelta">
+            <summary>
+            Mouse wheel delta this frame. XNA does report only the total
+            scroll value, but we usually need the current delta!
+            </summary>
+            <returns>0</returns>
+        </member>
+        <member name="T:Nine.IObjectFactory">
+            <summary>
+            Defines a factory that can create an instance of a object based on the
+            specified type name.
+            </summary>
+        </member>
+        <member name="M:Nine.IObjectFactory.Create``1(System.String)">
+            <summary>
+            Creates a new instance of the object with the specified type name.
+            </summary>
+        </member>
+        <member name="T:Nine.ServiceProviderExtensions">
+            <summary>
+            Contains extension methods for IServiceProvider.
+            </summary>
+        </member>
+        <member name="T:Nine.UtilityExtensions">
+            <summary>
+            Contains commonly used utility extension methods.
+            </summary>
+        </member>
+        <member name="M:Nine.UtilityExtensions.ForEachRecursive``1(System.Collections.IEnumerable,System.Action{``0})">
+            <summary>
+            Tests the target object and its descendants to see if it of type T.
+            </summary>
+        </member>
+        <member name="T:Nine.DisplayNameAttribute">
+            <summary>
+            Mimic the System.ComponentModel.DisplayNameAttribute for .NET Compact Framework.
+            </summary>
+        </member>
+        <member name="T:Nine.PropertyExpression`1">
+            <summary>
+            Represents a property access expression.
+            </summary>
+            <example>
+            "Name"                  -> Target.Name
+            "Name.FirstName"        -> Target.Name.FirstName
+            "Names[0].FirstName"    -> Target.Names[0].FirstName
+            "Names["n"].FirstName"  -> Target.Names["n"].FirstName
+            </example>
+        </member>
+        <member name="M:Nine.PropertyExpression`1.#ctor(System.Object,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Nine.PropertyExpression`1"/> class.
+            </summary>
+        </member>
+        <member name="P:Nine.PropertyExpression`1.Value">
+            <summary>
+            Gets or sets the value of the target evaluated using this expression.
+            </summary>
+        </member>
+        <member name="T:Nine.QuadTreeSceneManager`1">
+            <summary>
+            Manages a collection of objects using quad tree.
+            </summary>
+        </member>
+        <member name="M:Nine.QuadTreeSceneManager`1.#ctor">
+            <summary>
+            Creates a new instance of QuadTreeSceneManager.
+            </summary>
+        </member>
+        <member name="M:Nine.QuadTreeSceneManager`1.#ctor(Nine.BoundingRectangle,System.Int32)">
+            <summary>
+            Creates a new instance of QuadTreeSceneManager.
+            </summary>
+        </member>
+        <member name="P:Nine.QuadTreeSceneManager`1.Bounds">
+            <summary>
+            Gets the bounds of this QuadTreeSceneManager.
+            </summary>
+        </member>
+        <member name="P:Nine.QuadTreeSceneManager`1.MaxDepth">
+            <summary>
+            Gets the max depth of this QuadTreeSceneManager.
+            </summary>
+        </member>
+        <member name="M:Nine.Serialization.Clone(System.Object)">
+            <summary>
+            Clones the specified prototype object using xml serialization.
+            </summary>
+        </member>
+        <member name="M:Nine.Serialization.CreateSerializer(System.Type)">
+            <summary>
+            Gets the serializer for the specified type.
+            </summary>
+        </member>
+        <member name="P:Nine.Serialization.KnownAttributeOverrides">
+            <summary>
+            Gets a collection of known attribute overrides assemblies.
+            </summary>
+        </member>
+        <member name="P:Nine.Serialization.KnownAssemblies">
+            <summary>
+            Gets a collection of known assemblies.
+            Types marked as Serializable in the known assemblies can be serialized and
+            deserialized using <c>Save</c> and <c>FromFile</c>.
+            </summary>
+        </member>
+        <member name="P:Nine.Serialization.KnownTypes">
+            <summary>
+            Gets a collection of known types that can be serialized and
+            deserialized using <c>Save</c> and <c>FromFile</c>.
+            </summary>
+        </member>
+        <member name="T:Nine.TimeEventArgs">
+            <summary>
+            Event arguments that contains the elapsed time.
+            </summary>
+        </member>
+        <member name="P:Nine.TimeEventArgs.ElapsedTime">
+            <summary>
+            Gets the elapsed time since last update or draw call.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "T:Nine.WeakReference`1" -->
+        <member name="M:Nine.WeakReference`1.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Nine.WeakReference`1"/> class.
+            </summary>
+        </member>
+        <member name="M:Nine.WeakReference`1.#ctor(System.Object)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Nine.WeakReference`1"/> class.
+            </summary>
+            <param name="target">The target.</param>
+        </member>
+        <member name="M:Nine.WeakReference`1.#ctor(System.Object,System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Nine.WeakReference`1"/> class.
+            </summary>
+            <param name="target">The target.</param>
+            <param name="trackResurrection">if set to <c>true</c> [track resurrection].</param>
+        </member>
+        <member name="P:Nine.WeakReference`1.Target">
+            <summary>
+            Gets or sets the object (the target) referenced by the current <see cref="T:System.WeakReference"/> object.
+            </summary>
+            <returns>null if the object referenced by the current <see cref="T:System.WeakReference"/> object has been garbage collected; otherwise, a reference to the object referenced by the current <see cref="T:System.WeakReference"/> object.</returns>
+              
+            <exception cref="T:System.InvalidOperationException">The reference to the target object is invalid. This exception can be thrown while setting this property if the value is a null reference or if the object has been finalized during the set operation.</exception>
+        </member>
+        <member name="T:Nine.Animations.Animation">
+            <summary>
+            Base class for all playable animations.
+            </summary>
+        </member>
+        <member name="T:Nine.Animations.IAnimation">
+            <summary>
+            Interface for animation playback.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.IAnimation.Play">
+            <summary>
+            Plays the animation from start position.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.IAnimation.Stop">
+            <summary>
+            Stops the animation and position.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.IAnimation.Pause">
+            <summary>
+            Pauses the animation.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.IAnimation.Resume">
+            <summary>
+            Resumes the animation.
+            </summary>
+        </member>
+        <member name="P:Nine.Animations.IAnimation.State">
+            <summary>
+            Gets the current state of the animation.
+            </summary>
+        </member>
+        <member name="E:Nine.Animations.IAnimation.Completed">
+            <summary>
+            Occurs when this animation has completely finished playing.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.Animation.Play">
+            <summary>
+            Plays the animation from start position.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.Animation.Stop">
+            <summary>
+            Stops the animation.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.Animation.Pause">
+            <summary>
+            Pauses the animation.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.Animation.Resume">
+            <summary>
+            Resumes the animation.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.Animation.Update(System.TimeSpan)">
+            <summary>
+            Updates the internal state of the object based on game time.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.Animation.OnStarted">
+            <summary>
+            Plays the animation from start.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.Animation.OnStopped">
+            <summary>
+            Stops the animation.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.Animation.OnPaused">
+            <summary>
+            Pauses the animation.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.Animation.OnResumed">
+            <summary>
+            Resumes the animation.
+            </summary>
+        </member>
+        <member name="P:Nine.Animations.Animation.State">
+            <summary>
+            Gets the current state of the animation.
+            </summary>
+        </member>
+        <member name="E:Nine.Animations.Animation.Completed">
+            <summary>
+            Occurs when this animation has completely finished playing.
+            </summary>
+        </member>
+        <member name="E:Nine.Animations.Animation.Started">
+            <summary>
+            Occurs when this animation has started playing.
+            </summary>
+        </member>
+        <member name="E:Nine.Animations.Animation.Stopped">
+            <summary>
+            Occurs when this animation has stopped.
+            </summary>
+        </member>
+        <member name="E:Nine.Animations.Animation.Paused">
+            <summary>
+            Occurs when this animation has been paused.
+            </summary>
+        </member>
+        <member name="E:Nine.Animations.Animation.Resumed">
+            <summary>
+            Occurs when this animation has been resumed after pause.
+            </summary>
+        </member>
+        <member name="T:Nine.Animations.AnimationPlayer">
+            <summary>
+            Represents a basic animation player that can play multiple animation
+            sequences using different channels.
+            </summary>
+        </member>
+        <member name="T:Nine.Animations.AnimationPlayerChannel">
+            <summary>
+            Represents a channel used by <c>AnimationPlayer</c>.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.AnimationPlayerChannel.Play(System.String)">
+            <summary>
+            Plays the animation with the specified name.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.AnimationPlayerChannel.TryPlay(System.String)">
+            <summary>
+            Tries to play the animation with the specified name.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.AnimationPlayerChannel.Play(Nine.Animations.IAnimation)">
+            <summary>
+            Plays the specified animation.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.AnimationPlayerChannel.Play(Nine.Animations.IAnimation,System.TimeSpan)">
+            <summary>
+            Plays the specified animation with a delay.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.AnimationPlayerChannel.Play(System.String,Nine.Animations.IAnimation)">
+            <summary>
+            Plays the specified animation and adds it to the animation collection.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.AnimationPlayerChannel.OnStarted">
+            <summary>
+            Plays the animation from start.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.AnimationPlayerChannel.OnPaused">
+            <summary>
+            Pauses the animation.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.AnimationPlayerChannel.OnStopped">
+            <summary>
+            Stops the animation.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.AnimationPlayerChannel.OnResumed">
+            <summary>
+            Resumes the animation.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.AnimationPlayerChannel.Update(System.TimeSpan)">
+            <summary>
+            Updates the internal state of the object based on game time.
+            </summary>
+        </member>
+        <member name="P:Nine.Animations.AnimationPlayerChannel.CurrentName">
+            <summary>
+            Gets the name of the current animation.
+            </summary>
+        </member>
+        <member name="P:Nine.Animations.AnimationPlayerChannel.Current">
+            <summary>
+            Gets the current animation.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.AnimationPlayer.#ctor">
+            <summary>
+            Creates a new instance of AnimationPlayer.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.AnimationPlayer.Contains(System.String)">
+            <summary>
+            Determines whether this animation player contains an animation with the specified name.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.AnimationPlayer.OnStarted">
+            <summary>
+            Called when the animation player has started.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.AnimationPlayer.Update(System.TimeSpan)">
+            <summary>
+            Updates the specified elapsed time.
+            </summary>
+        </member>
+        <member name="P:Nine.Animations.AnimationPlayer.Animations">
+            <summary>
+            Gets the dictionary that stores any animation data.
+            </summary>
+        </member>
+        <member name="P:Nine.Animations.AnimationPlayer.Tag">
+            <summary>
+            Gets or sets user data.
+            </summary>
+        </member>
+        <member name="P:Nine.Animations.AnimationPlayer.Item(System.Object)">
+            <summary>
+            Gets the <see cref="T:Nine.Animations.AnimationPlayerChannel"/> with the specified channel identifier.
+            </summary>
+        </member>
+        <member name="T:Nine.Animations.DelayAnimation">
+            <summary>
+            An dummy animation that completes after the specified duration.
+            This is usually used with <c>SequentialAnimation</c> to delay
+            the playing of subsequent animations.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.DelayAnimation.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Nine.Animations.DelayAnimation"/> class.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.DelayAnimation.#ctor(System.Single)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Nine.Animations.DelayAnimation"/> class.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.DelayAnimation.#ctor(System.TimeSpan)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Nine.Animations.DelayAnimation"/> class.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.DelayAnimation.OnStarted">
+            <summary>
+            Plays the animation from start.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.DelayAnimation.Update(System.TimeSpan)">
+            <summary>
+            Updates the internal state of the object based on game time.
+            </summary>
+        </member>
+        <member name="P:Nine.Animations.DelayAnimation.Duration">
+            <summary>
+            Gets or sets the duration of this animation.
+            </summary>
+        </member>
+        <member name="P:Nine.Animations.DelayAnimation.ElapsedTime">
+            <summary>
+            Gets the elapsed time since the playing of this delay animation.
+            </summary>
+        </member>
+        <member name="T:Nine.Animations.AnimationState">
+            <summary>
+            Current state (playing, paused, or stopped) of an animation.
+            </summary>
+        </member>
+        <member name="F:Nine.Animations.AnimationState.Stopped">
+            <summary>
+            The animation is stopped.
+            </summary>
+        </member>
+        <member name="F:Nine.Animations.AnimationState.Playing">
+            <summary>
+            The animation is playing.
+            </summary>
+        </member>
+        <member name="F:Nine.Animations.AnimationState.Paused">
+            <summary>
+            The animation is paused.
+            </summary>
+        </member>
+        <member name="T:Nine.Animations.ITimelineAnimation">
+            <summary>
+            Interface for timeline based animation.
+            </summary>
+        </member>
+        <member name="P:Nine.Animations.ITimelineAnimation.Duration">
+            <summary>
+            Gets or sets the running time for a timeline animation (excluding repeats).
+            </summary>
+        </member>
+        <member name="P:Nine.Animations.ITimelineAnimation.Position">
+            <summary>
+            Gets the position of the animation as an elapsed time since the start point.
+            Counts up if the direction is Forward, down if Backward.
+            </summary>
+        </member>
+        <member name="P:Nine.Animations.ITimelineAnimation.Speed">
+            <summary>
+            Gets or sets the playing speed of the timeline animation.
+            Multiplies the number of clock ticks on each update.
+            </summary>
+        </member>
+        <member name="T:Nine.Animations.KeyframeEnding">
+            <summary>
+            Defines the behavior of the last ending keyframe.
+            </summary>
+            <remarks>
+            The difference between these behaviors won't be noticeable
+            unless the KeyframeAnimation is really slow.
+            </remarks>
+        </member>
+        <member name="F:Nine.Animations.KeyframeEnding.Clamp">
+            <summary>
+            The animation will wait for the last frame to finish
+            but won't blend the last frame with the first frame.
+            Specify this when your animation isn't looped.
+            </summary>
+        </member>
+        <member name="F:Nine.Animations.KeyframeEnding.Wrap">
+            <summary>
+            The animation will blend between the last keyframe
+            and the first keyframe. 
+            Specify this when the animation is looped and the first
+            frame doesn't equal to the last frame.
+            </summary>
+        </member>
+        <member name="F:Nine.Animations.KeyframeEnding.Discard">
+            <summary>
+            The animation will stop immediately when it reaches
+            the last frame, so the ending frame has no duration.
+            Specify this when the animation is looped and the first
+            frame is identical to the last frame.
+            </summary>
+        </member>
+        <member name="T:Nine.Animations.KeyframeEventArges">
+            <summary>
+            Event args used by KeyframeAnimation events.
+            </summary>
+        </member>
+        <member name="P:Nine.Animations.KeyframeEventArges.Frame">
+            <summary>
+            Gets the index of the frame.
+            </summary>
+        </member>
+        <member name="T:Nine.Animations.KeyframeAnimation">
+            <summary>
+            Basic class for all keyframed animations.
+            </summary>
+        </member>
+        <member name="T:Nine.Animations.TimelineAnimation">
+            <summary>
+            Basic class for all timeline based animations.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.TimelineAnimation.#ctor">
+            <summary>
+            Creates a new instance of <c>TimelineAnimation</c>.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.TimelineAnimation.Seek(System.Single)">
+            <summary>
+            Positions the animation at the specified fraction of <c>Duration</c>.
+            Takes effect on an animation that is playing or paused.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.TimelineAnimation.Seek(System.TimeSpan)">
+            <summary>
+            Positions the animation at the specified time value between 0 and Duration.
+            Takes effect on an animation that is playing or paused.
+            Adjusts elapsed time, so that animation will stop on time.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.TimelineAnimation.OnSeek(System.TimeSpan,System.TimeSpan)">
+            <summary>
+            When overridden, positions the animation at the specified location.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.TimelineAnimation.OnRepeated">
+            <summary>
+            Called when this animation is repeated.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.TimelineAnimation.OnStarted">
+            <summary>
+            Plays the animation from start.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.TimelineAnimation.Update(System.TimeSpan)">
+            <summary>
+            Update the animation by a specified amount of elapsed time.
+            Handle playing either forwards or backwards.
+            Determines whether animation should terminate or continue.
+            Signals related events.
+            </summary>
+            <param name="elapsedTime"></param>
+        </member>
+        <member name="P:Nine.Animations.TimelineAnimation.TotalDuration">
+            <summary>
+            Gets the total duration of the timeline animation without been trimmed by StartTime and EndTime.
+            </summary>
+        </member>
+        <member name="P:Nine.Animations.TimelineAnimation.Duration">
+            <summary>
+            Gets or set the running time for one run of a timeline animation, excluding repeats.
+            </summary>
+        </member>
+        <member name="P:Nine.Animations.TimelineAnimation.BeginTime">
+            <summary>
+            Gets or sets the time at which this <see cref="T:Nine.Animations.TimelineAnimation"/> should begin.
+            </summary>
+        </member>
+        <member name="P:Nine.Animations.TimelineAnimation.EndTime">
+            <summary>
+            Gets or sets the time at which this <see cref="T:Nine.Animations.TimelineAnimation"/> should end.
+            </summary>
+        </member>
+        <member name="P:Nine.Animations.TimelineAnimation.Speed">
+            <summary>
+            Gets or sets the playing speed of this animation.
+            </summary>
+        </member>
+        <member name="P:Nine.Animations.TimelineAnimation.ElapsedTime">
+            <summary>
+            Gets the elapsed time since the animation started playing.
+            Accumulates on each update, and updated by seek to ensure the animation
+            stops at the right time.
+            </summary>
+        </member>
+        <member name="P:Nine.Animations.TimelineAnimation.AutoReverse">
+            <summary>
+            Gets whether this animation should play backwards after it reaches the end.
+            Takes effect when an animation would otherwise complete.
+            </summary>
+        </member>
+        <member name="P:Nine.Animations.TimelineAnimation.StartupDirection">
+            <summary>
+            Gets or sets whether the animation is playing forward or backward on startup.
+            Takes effect only when <c>Play</c> is called.
+            </summary>
+        </member>
+        <member name="P:Nine.Animations.TimelineAnimation.Direction">
+            <summary>
+            Gets or set whether the animation is currently playing forward or backward.
+            Takes effect on an animation that is playing or paused.
+            </summary>
+        </member>
+        <member name="P:Nine.Animations.TimelineAnimation.Repeat">
+            <summary>
+            Gets or sets the number of times this animation will be played.
+            When set to a fractional value, the animation will be stopped and completed part way.
+            Float.MaxValue means forever. The default value is 1.
+            </summary>
+        </member>
+        <member name="P:Nine.Animations.TimelineAnimation.Position">
+            <summary>
+            Gets the position of the animation as an elapsed time since the begin point.
+            Counts up if the direction is Forward, down if Backward.
+            </summary>
+        </member>
+        <member name="E:Nine.Animations.TimelineAnimation.Repeated">
+            <summary>
+            Occurs when this animation has reached the end and has just repeated.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.KeyframeAnimation.#ctor">
+            <summary>
+            Creates a new instance of <c>KeyframeAnimation</c>.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.KeyframeAnimation.GetFrame(System.TimeSpan,System.Int32@,System.Single@)">
+            <summary>
+            Gets the index of the frame at the specified position.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.KeyframeAnimation.Seek(System.Int32)">
+            <summary>
+            Positions the animation at the specified frame.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.KeyframeAnimation.OnStopped">
+            <summary>
+            Stops the animation.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.KeyframeAnimation.OnStarted">
+            <summary>
+            Plays the animation from start.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.KeyframeAnimation.OnCompleted">
+            <summary>
+            Called when the animation is completed.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.KeyframeAnimation.OnSeek(System.TimeSpan,System.TimeSpan)">
+            <summary>
+            When overridden, positions the animation at the specified location.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.KeyframeAnimation.OnSeek(System.Int32,System.Int32,System.Single)">
+            <summary>
+            Moves the animation at the position between start frame and end frame
+            specified by percentage.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.KeyframeAnimation.OnEnterFrame(System.Int32)">
+            <summary>
+            Called when the specified frame is entered.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.KeyframeAnimation.OnExitFrame(System.Int32)">
+            <summary>
+            Called when the specified frame is exit.
+            </summary>
+        </member>
+        <member name="P:Nine.Animations.KeyframeAnimation.BeginFrame">
+            <summary>
+            Gets or sets the frame at which this <see cref="T:Nine.Animations.KeyframeAnimation"/> should begin.
+            </summary>
+        </member>
+        <member name="P:Nine.Animations.KeyframeAnimation.EndFrame">
+            <summary>
+            Gets or sets the frame at which this <see cref="T:Nine.Animations.KeyframeAnimation"/> should end.
+            </summary>
+        </member>
+        <member name="P:Nine.Animations.KeyframeAnimation.FramesPerSecond">
+            <summary>
+            Gets or sets number of frames to be played per second.
+            The default value is 24. 
+            </summary>
+        </member>
+        <member name="P:Nine.Animations.KeyframeAnimation.CurrentFrame">
+            <summary>
+            Gets the current frame index been played.
+            </summary>
+        </member>
+        <member name="P:Nine.Animations.KeyframeAnimation.TotalFrames">
+            <summary>
+            Gets the total number of frames.
+            </summary>
+        </member>
+        <member name="P:Nine.Animations.KeyframeAnimation.Ending">
+            <summary>
+            Gets or sets the behavior of the ending keyframe.
+            The default value is KeyframeEnding.Clamp.
+            </summary>
+        </member>
+        <member name="E:Nine.Animations.KeyframeAnimation.EnterFrame">
+            <summary>
+            Occurs when this animation has just entered the current frame.
+            </summary>
+        </member>
+        <member name="E:Nine.Animations.KeyframeAnimation.ExitFrame">
+            <summary>
+            Occurs when this animation is about to exit the current frame.
+            </summary>
+        </member>
+        <member name="T:Nine.Animations.AnimationDirection">
+            <summary>
+            Defines whether the animation is playing forward or backward.
+            </summary>
+        </member>
+        <member name="F:Nine.Animations.AnimationDirection.Forward">
+            <summary>
+            The animation is playing forward.
+            </summary>
+        </member>
+        <member name="F:Nine.Animations.AnimationDirection.Backward">
+            <summary>
+            The animation is playing backward.
+            </summary>
+        </member>
+        <member name="T:Nine.Animations.SequentialAnimation">
+            <summary>
+            Contains several animation clips that are played one after another.
+            The animation completes when the last animation has finished playing.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.SequentialAnimation.#ctor">
+            <summary>
+            Creates a new <c>SequentialAnimation</c>.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.SequentialAnimation.#ctor(System.Collections.Generic.IEnumerable{Nine.Animations.IAnimation})">
+            <summary>
+            Creates a new <c>SequentialAnimation</c> with the specified animations.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.SequentialAnimation.#ctor(Nine.Animations.IAnimation[])">
+            <summary>
+            Creates a new <c>SequentialAnimation</c> with the specified animations.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.SequentialAnimation.Play(Nine.Animations.IAnimation)">
+            <summary>
+            Plays the specified animation clip.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.SequentialAnimation.Play(System.Int32)">
+            <summary>
+            Plays the specified animation clip with the given index.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.SequentialAnimation.Seek(System.Int32)">
+            <summary>
+            Seeks the specified index.
+            </summary>
+            <param name="index">The index.</param>
+        </member>
+        <member name="M:Nine.Animations.SequentialAnimation.OnStarted">
+            <summary>
+            Plays the animation from start.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.SequentialAnimation.OnStopped">
+            <summary>
+            Stops the animation.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.SequentialAnimation.OnPaused">
+            <summary>
+            Pauses the animation.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.SequentialAnimation.OnResumed">
+            <summary>
+            Resumes the animation.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.SequentialAnimation.Update(System.TimeSpan)">
+            <summary>
+            Updates the internal state of the object based on game time.
+            </summary>
+            <param name="elapsedTime"></param>
+        </member>
+        <member name="M:Nine.Animations.SequentialAnimation.OnRepeated">
+            <summary>
+            Called when repeated.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.SequentialAnimation.GetEnumerator">
+            <summary>
+            Returns an enumerator that iterates through the collection.
+            </summary>
+        </member>
+        <member name="P:Nine.Animations.SequentialAnimation.Animations">
+            <summary>
+            Gets all the layers in the animation.
+            </summary>
+        </member>
+        <member name="P:Nine.Animations.SequentialAnimation.Repeat">
+            <summary>
+            Gets or sets number of times this animation will be played.
+            </summary>
+        </member>
+        <member name="E:Nine.Animations.SequentialAnimation.Repeated">
+            <summary>
+            Occurs when this animation has reached the end and repeated.
+            </summary>
+        </member>
+        <member name="P:Nine.Animations.SequentialAnimation.CurrentIndex">
+            <summary>
+            Gets the index of the current animation clip been played.
+            </summary>
+        </member>
+        <member name="P:Nine.Animations.SequentialAnimation.Current">
+            <summary>
+            Gets the current animation clip been played
+            </summary>
+        </member>
+        <member name="T:Nine.Animations.LayeredAnimation">
+            <summary>
+            Contains several animation clips that are played concurrently.
+            The animation completes when all of its containing animations
+            had finished playing.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.LayeredAnimation.#ctor">
+            <summary>
+            Creates a new <c>LayeredAnimation</c>.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.LayeredAnimation.#ctor(System.Collections.Generic.IEnumerable{Nine.Animations.IAnimation})">
+            <summary>
+            Creates a new <c>LayeredAnimation</c> then fill each layer
+            with the input animations.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.LayeredAnimation.#ctor(Nine.Animations.IAnimation[])">
+            <summary>
+            Creates a new <c>LayeredAnimation</c> then fill each layer
+            with the input animations.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.LayeredAnimation.OnStarted">
+            <summary>
+            Plays the animation from start.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.LayeredAnimation.OnStopped">
+            <summary>
+            Stops the animation.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.LayeredAnimation.OnPaused">
+            <summary>
+            Pauses the animation.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.LayeredAnimation.OnResumed">
+            <summary>
+            Resumes the animation.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.LayeredAnimation.Update(System.TimeSpan)">
+            <summary>
+            Updates the internal state of the object based on game time.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.LayeredAnimation.OnRepeated">
+            <summary>
+            Called when repeated.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.LayeredAnimation.GetEnumerator">
+            <summary>
+            Returns an enumerator that iterates through the collection.
+            </summary>
+        </member>
+        <member name="P:Nine.Animations.LayeredAnimation.Animations">
+            <summary>
+            Gets all the layers in the animation.
+            </summary>
+        </member>
+        <member name="P:Nine.Animations.LayeredAnimation.KeyAnimation">
+            <summary>
+            Gets or sets the key animation of this LayeredAnimation.
+            A LayeredAnimation ends either when the last contained 
+            animation stops or when the specifed KeyAnimation ends.
+            </summary>
+        </member>
+        <member name="P:Nine.Animations.LayeredAnimation.Repeat">
+            <summary>
+            Gets or sets number of times this animation will be played.
+            </summary>
+        </member>
+        <member name="E:Nine.Animations.LayeredAnimation.Repeated">
+            <summary>
+            Occurs when this animation has reached the end and repeated.
+            </summary>
+        </member>
+        <member name="T:Nine.Operator`1">
+            <summary>
+            Defines an operation on the specified type.
+            </summary>
+        </member>
+        <member name="T:Nine.AddHelper">
+            <summary>
+            Helper class to add common types.
+            </summary>
+        </member>
+        <member name="T:Nine.BoundingCircle">
+            <summary>
+            Defines an circle-shaped 2D volume.
+            </summary>
+        </member>
+        <member name="F:Nine.BoundingCircle.Center">
+            <summary>
+            Gets or sets the center of the circle.
+            </summary>
+        </member>
+        <member name="F:Nine.BoundingCircle.Radius">
+            <summary>
+            Gets or sets the radius of the circle.
+            </summary>
+        </member>
+        <member name="M:Nine.BoundingCircle.#ctor(Microsoft.Xna.Framework.Vector2,System.Single)">
+            <summary>
+            Create a new instance of BoundingCircle object.
+            </summary>
+        </member>
+        <member name="M:Nine.BoundingCircle.#ctor(Microsoft.Xna.Framework.BoundingSphere)">
+            <summary>
+            Create a new instance of BoundingCircle object.
+            </summary>
+        </member>
+        <member name="M:Nine.BoundingCircle.Contains(System.Single,System.Single)">
+            <summary>
+            Tests whether the BoundingCircle contains a point.
+            </summary>
+        </member>
+        <member name="M:Nine.BoundingCircle.Contains(Microsoft.Xna.Framework.Vector2)">
+            <summary>
+            Tests whether the BoundingCircle contains a point.
+            </summary>
+        </member>
+        <member name="M:Nine.BoundingCircle.Contains(Nine.BoundingCircle)">
+            <summary>
+            Tests whether the BoundingCircle contains another BoundingCircle.
+            </summary>
+        </member>
+        <member name="M:Nine.BoundingCircle.CreateFromPoints(System.Collections.Generic.IEnumerable{Microsoft.Xna.Framework.Vector2})">
+            <summary>
+            Creates a BoundingCircle that can contain a specified list of points.
+            </summary>
+        </member>
+        <member name="T:Nine.BoundingRectangle">
+            <summary>
+            Defines an axis-aligned rectangle-shaped 2D volume.
+            </summary>
+        </member>
+        <member name="F:Nine.BoundingRectangle.Min">
+            <summary>
+            Gets or sets the min value.
+            </summary>
+        </member>
+        <member name="F:Nine.BoundingRectangle.Max">
+            <summary>
+            Gets or sets the max value.
+            </summary>
+        </member>
+        <member name="M:Nine.BoundingRectangle.#ctor(Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Vector2)">
+            <summary>
+            Create a new instance of BoundingRectangle object.
+            </summary>
+        </member>
+        <member name="M:Nine.BoundingRectangle.#ctor(Microsoft.Xna.Framework.Rectangle)">
+            <summary>
+            Create a new instance of BoundingRectangle object.
+            </summary>
+        </member>
+        <member name="M:Nine.BoundingRectangle.#ctor(Microsoft.Xna.Framework.BoundingBox)">
+            <summary>
+            Create a new instance of BoundingRectangle object.
+            </summary>
+        </member>
+        <member name="M:Nine.BoundingRectangle.Contains(System.Single,System.Single)">
+            <summary>
+            Tests whether the BoundingRectangle contains a point.
+            </summary>
+        </member>
+        <member name="M:Nine.BoundingRectangle.Contains(Microsoft.Xna.Framework.Vector2)">
+            <summary>
+            Tests whether the BoundingRectangle contains a point.
+            </summary>
+        </member>
+        <member name="M:Nine.BoundingRectangle.Contains(Nine.BoundingRectangle)">
+            <summary>
+            Tests whether the BoundingRectangle contains another rectangle.
+            </summary>
+        </member>
+        <member name="M:Nine.BoundingRectangle.CreateFromPoints(System.Collections.Generic.IEnumerable{Microsoft.Xna.Framework.Vector2})">
+            <summary>
+            Creates the smallest BoundingBox that will contain a group of points.
+            </summary>
+        </member>
+        <member name="M:Nine.BoundingRectangle.CreateMerged(Nine.BoundingRectangle,Nine.BoundingRectangle)">
+            <summary>
+            Creates the merged bounding rectangle.
+            </summary>
+        </member>
+        <member name="T:Nine.BoundingBoxExtensions">
+            <summary>
+            Contains extension methods for BoundingBox.
+            </summary>
+        </member>
+        <member name="M:Nine.BoundingBoxExtensions.Intersects(Microsoft.Xna.Framework.BoundingBox,Microsoft.Xna.Framework.Vector3,Microsoft.Xna.Framework.Vector3)">
+            <summary>
+            Tests whether the BoundingBox intersects with a line segment.
+            </summary>
+        </member>
+        <member name="M:Nine.BoundingBoxExtensions.Intersects(Microsoft.Xna.Framework.BoundingBox,Microsoft.Xna.Framework.Vector3@,Microsoft.Xna.Framework.Vector3@,System.Nullable{System.Single}@)">
+            <summary>
+            Tests whether the BoundingBox intersects with a line segment.
+            </summary>
+        </member>
+        <member name="M:Nine.BoundingBoxExtensions.Contains(Microsoft.Xna.Framework.BoundingBox,Nine.IGeometry)">
+            <summary>
+            Tests whether the BoundingBox contains the specified geometry.
+            </summary>
+            <param name="transform">
+            Transform of the geometry.
+            </param>
+        </member>
+        <member name="M:Nine.BoundingBoxExtensions.Contains(Microsoft.Xna.Framework.BoundingBox,Nine.Triangle)">
+            <summary>
+            Tests whether the BoundingBox contains a Triangle.
+            </summary>
+        </member>
+        <member name="M:Nine.BoundingBoxExtensions.Contains(Microsoft.Xna.Framework.BoundingBox,Nine.Triangle@,Microsoft.Xna.Framework.ContainmentType@)">
+            <summary>
+            Tests whether the BoundingBox contains a Triangle.
+            </summary>
+        </member>
+        <member name="M:Nine.BoundingBoxExtensions.GetCenter(Microsoft.Xna.Framework.BoundingBox)">
+            <summary>
+            Gets the center of this BoundingBox.
+            </summary>
+        </member>
+        <member name="M:Nine.BoundingBoxExtensions.GetCenter(Microsoft.Xna.Framework.Rectangle)">
+            <summary>
+            Gets the center of this Rectangle.
+            </summary>
+        </member>
+        <member name="M:Nine.BoundingBoxExtensions.GetCenter(Nine.BoundingRectangle)">
+            <summary>
+            Gets the center of this Rectangle.
+            </summary>
+        </member>
+        <member name="M:Nine.BoundingBoxExtensions.CreateMerged(System.Collections.Generic.IEnumerable{Microsoft.Xna.Framework.BoundingBox})">
+            <summary>
+            Creates a merged bounding box from a list of existing bounding boxes.
+            </summary>
+        </member>
+        <member name="M:Nine.BoundingBoxExtensions.CreateAxisAligned(Microsoft.Xna.Framework.BoundingBox,Microsoft.Xna.Framework.Matrix)">
+            <summary>
+            Compute the axis aligned bounding box from an oriented bounding box.
+            </summary>
+        </member>
+        <member name="T:Nine.TraverseOptions">
+            <summary>
+            Determines how to traverse the next node when traversing a space partition tree.
+            </summary>
+        </member>
+        <member name="F:Nine.TraverseOptions.Continue">
+            <summary>
+            The traverse operation should continue to visit the next node.
+            </summary>
+        </member>
+        <member name="F:Nine.TraverseOptions.Skip">
+            <summary>
+            The traverse operation should skip the current node and its child nodes.
+            </summary>
+        </member>
+        <member name="F:Nine.TraverseOptions.Stop">
+            <summary>
+            The traverse operation should stop visiting nodes.
+            </summary>
+        </member>
+        <member name="T:Nine.SpacePartitionTree`2">
+            <summary>
+            Represents basic a space partition tree structure.
+            </summary>
+        </member>
+        <member name="M:Nine.SpacePartitionTree`2.#ctor">
+            <summary>
+            For serialization.
+            </summary>
+        </member>
+        <member name="M:Nine.SpacePartitionTree`2.#ctor(`1,System.Int32)">
+            <summary>
+            Creates a new SpacePartitionTree with the specified boundary.
+            </summary>
+        </member>
+        <member name="M:Nine.SpacePartitionTree`2.Expand(`1)">
+            <summary>
+            Expand the target node with 8 child nodes.
+            </summary>
+            <returns>
+            If max depth is reached, returns true, otherwise, return false;
+            </returns>
+        </member>
+        <member name="M:Nine.SpacePartitionTree`2.ExpandNode(`1)">
+            <summary>
+            When implemented, return the child nodes of the target node.
+            </summary>
+        </member>
+        <member name="M:Nine.SpacePartitionTree`2.ExpandAll(System.Predicate{`1})">
+            <summary>
+            Expand the root node and all its child nodes with the specified predication.
+            </summary>
+            <param name="condition">
+            Wether the bounds of the target SpacePartitionTreeNode contains this value.
+            </param>
+            <returns>
+            Number of node expanded.
+            </returns>
+        </member>
+        <member name="M:Nine.SpacePartitionTree`2.ExpandAll(`1,System.Predicate{`1})">
+            <summary>
+            Expand the target node and all its child nodes with the specified predication.
+            </summary>
+            <param name="condition">
+            Whether the bounds of the target SpacePartitionTreeNode contains this value.
+            </param>
+            <returns>
+            Number of node expanded.
+            </returns>
+        </member>
+        <member name="M:Nine.SpacePartitionTree`2.Collapse">
+            <summary>
+            Removes all the child nodes of the root.
+            </summary>
+        </member>
+        <member name="M:Nine.SpacePartitionTree`2.Collapse(`1)">
+            <summary>
+            Removes all the child nodes of the root.
+            </summary>
+        </member>
+        <member name="M:Nine.SpacePartitionTree`2.Collapse(`1,System.Predicate{`1})">
+            <summary>
+            Removes all the child nodes of the target node.
+            </summary>
+            <returns>
+            Number of nodes collapsed.
+            </returns>
+        </member>
+        <member name="M:Nine.SpacePartitionTree`2.Traverse(System.Func{`1,Nine.TraverseOptions})">
+            <summary>
+            Traverses the tree using Depth First Search (DFS). Compare each node 
+            with the condition to determine whether the traverse should continue.
+            </summary>
+            <param name="result">
+            Returns true when the trverse should continue.
+            </param>
+        </member>
+        <member name="M:Nine.SpacePartitionTree`2.Traverse(`1,System.Func{`1,Nine.TraverseOptions})">
+            <summary>
+            Traverses the tree using Depth First Search (DFS) from the target. Compare each node 
+            with the condition to determine whether the traverse should continue.
+            </summary>
+            <param name="result">
+            Returns true when the trverse should continue.
+            </param>
+        </member>
+        <member name="F:Nine.SpacePartitionTree`2.stack">
+            <summary>
+            Stack for enumeration.
+            </summary>
+        </member>
+        <member name="P:Nine.SpacePartitionTree`2.Root">
+            <summary>
+            Gets the root SpacePartitionTreeNode of this SpacePartitionTree.
+            </summary>
+        </member>
+        <member name="P:Nine.SpacePartitionTree`2.MaxDepth">
+            <summary>
+            Gets the max depth of this SpacePartitionTree.
+            </summary>
+        </member>
+        <member name="T:Nine.SpacePartitionTreeNode`2">
+            <summary>
+            Represents a node in SpacePartitionTree.
+            </summary>
+        </member>
+        <member name="F:Nine.SpacePartitionTreeNode`2.Value">
+            <summary>
+            Gets or sets the value contained in the node.
+            </summary>
+        </member>
+        <member name="P:Nine.SpacePartitionTreeNode`2.HasChildren">
+            <summary>
+            Gets a value indicating whether the control contains child nodes.
+            </summary>
+        </member>
+        <member name="P:Nine.SpacePartitionTreeNode`2.Parent">
+            <summary>
+            Gets the parent node of the SpacePartitionTree Node.
+            </summary>
+        </member>
+        <member name="P:Nine.SpacePartitionTreeNode`2.Depth">
+            <summary>
+            Gets the depth of this SpacePartitionTree node.
+            </summary>
+        </member>
+        <member name="P:Nine.SpacePartitionTreeNode`2.Children">
+            <summary>
+            Gets a read-only collection of the 8 child nodes.
+            </summary>
+        </member>
+        <member name="T:Nine.OctreeSceneManager`1">
+            <summary>
+            Manages a collection of objects using quad tree.
+            </summary>
+        </member>
+        <member name="M:Nine.OctreeSceneManager`1.#ctor">
+            <summary>
+            Creates a new instance of OctreeSceneManager.
+            </summary>
+        </member>
+        <member name="M:Nine.OctreeSceneManager`1.#ctor(Microsoft.Xna.Framework.BoundingBox,System.Int32)">
+            <summary>
+            Creates a new instance of OctreeSceneManager.
+            </summary>
+        </member>
+        <member name="P:Nine.OctreeSceneManager`1.Bounds">
+            <summary>
+            Gets the bounds of this OctreeSceneManager.
+            </summary>
+        </member>
+        <member name="P:Nine.OctreeSceneManager`1.MaxDepth">
+            <summary>
+            Gets the max depth of this OctreeSceneManager.
+            </summary>
+        </member>
+        <member name="T:Nine.SceneManager`2">
+            <summary>
+            Represents an adapter class that filters and converts the result of
+            an existing <c>SceneManager</c>.
+            </summary>
+        </member>
+        <member name="T:Nine.INotifyCollectionChanged`1">
+            <summary>
+             Notifies clients that the collection has changed.
+            </summary>
+        </member>
+        <member name="E:Nine.INotifyCollectionChanged`1.Added">
+            <summary>
+            Raised when a new element is added to the collection.
+            </summary>
+        </member>
+        <member name="E:Nine.INotifyCollectionChanged`1.Removed">
+            <summary>
+            Raised when an element is removed from the collection.
+            </summary>
+        </member>
+        <member name="T:Nine.NotifyCollectionChangedEventArgs`1">
+            <summary>
+            Event args for changed an item.
+            </summary>
+        </member>
+        <member name="M:Nine.NotifyCollectionChangedEventArgs`1.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Nine.NotifyCollectionChangedEventArgs`1"/> class.
+            </summary>
+        </member>
+        <member name="M:Nine.NotifyCollectionChangedEventArgs`1.#ctor(System.Int32,`0)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Nine.NotifyCollectionChangedEventArgs`1"/> class.
+            </summary>
+        </member>
+        <member name="P:Nine.NotifyCollectionChangedEventArgs`1.Index">
+            <summary>
+            Gets the index of the added or removed item.
+            </summary>
+        </member>
+        <member name="P:Nine.NotifyCollectionChangedEventArgs`1.Value">
+            <summary>
+            Gets the new value of the item.
+            </summary>
+        </member>
+        <member name="T:Nine.NotificationCollection`1">
+            <summary>
+            A collection that can notify changes.
+            </summary>
+        </member>
+        <member name="F:Nine.NotificationCollection`1.Sender">
+            <summary>
+            Gets or sets the sender that raise the Added and Removed event.
+            </summary>
+        </member>
+        <member name="M:Nine.NotificationCollection`1.#ctor">
+            <summary>
+            Creates a new instance of EnumerableCollection.
+            </summary>
+        </member>
+        <member name="M:Nine.NotificationCollection`1.GetEnumerator">
+            <summary>
+            Gets the enumerator associated with is collection.
+            </summary>
+        </member>
+        <member name="M:Nine.NotificationCollection`1.Add(`0)">
+            <summary>
+            Adds a new item to the collection.
+            </summary>
+        </member>
+        <member name="M:Nine.NotificationCollection`1.AddRange(System.Collections.Generic.IEnumerable{`0})">
+            <summary>
+            Adds a collection of items to this collection.
+            </summary>
+        </member>
+        <member name="M:Nine.NotificationCollection`1.Remove(`0)">
+            <summary>
+            Removes the first occurrance of an item from the collection.
+            </summary>
+        </member>
+        <member name="M:Nine.NotificationCollection`1.Clear">
+            <summary>
+            Clears the collection
+            </summary>
+        </member>
+        <member name="M:Nine.NotificationCollection`1.Contains(`0)">
+            <summary>
+            Gets whether the list contains the specifed value.
+            </summary>
+        </member>
+        <member name="M:Nine.NotificationCollection`1.CopyTo(`0[],System.Int32)">
+            <summary>
+            Copy the list content to an array at the specified index.
+            </summary>
+        </member>
+        <member name="M:Nine.NotificationCollection`1.IndexOf(`0)">
+            <summary>
+            Gets the index of an item.
+            </summary>
+        </member>
+        <member name="M:Nine.NotificationCollection`1.Insert(System.Int32,`0)">
+            <summary>
+            Inserts an item at the specifed index.
+            </summary>
+        </member>
+        <member name="M:Nine.NotificationCollection`1.RemoveAt(System.Int32)">
+            <summary>
+            Removes an item at the specified index.
+            </summary>
+        </member>
+        <member name="M:Nine.NotificationCollection`1.RemoveAll(System.Predicate{`0})">
+            <summary>
+            Removes all items that matches the specified condition.
+            </summary>
+        </member>
+        <member name="M:Nine.NotificationCollection`1.OnAdded(System.Int32,`0)">
+            <summary>
+            Raised when a new element is added to the collection.
+            </summary>
+        </member>
+        <member name="M:Nine.NotificationCollection`1.OnRemoved(System.Int32,`0)">
+            <summary>
+            Raised when an element is removed from the collection.
+            </summary>
+        </member>
+        <member name="E:Nine.NotificationCollection`1.Added">
+            <summary>
+            Raised when a new element is added to the collection.
+            </summary>
+        </member>
+        <member name="E:Nine.NotificationCollection`1.Removed">
+            <summary>
+            Raised when an element is removed from the collection.
+            </summary>
+        </member>
+        <member name="P:Nine.NotificationCollection`1.IsReadOnly">
+            <summary>
+            Gets whether the list is readonly.
+            </summary>
+        </member>
+        <member name="P:Nine.NotificationCollection`1.Count">
+            <summary>
+            Gets the count of the list.
+            </summary>
+        </member>
+        <member name="P:Nine.NotificationCollection`1.Item(System.Int32)">
+            <summary>
+            Gets or sets the value at the given index.
+            </summary>
+        </member>
+        <member name="T:Nine.NotificationCollectionEnumerator`1">
+            <summary>
+            An optimized enumerator for notification collection.
+            </summary>
+        </member>
+        <member name="T:Nine.World">
+            <summary>
+            Defines a world that contains objects to be updated and rendered.
+            </summary>
+        </member>
+        <member name="T:Nine.IDrawable">
+            <summary>
+            Object that react to game draws.
+            </summary>
+        </member>
+        <member name="M:Nine.IDrawable.Draw(System.TimeSpan)">
+            <summary>
+            Draws the internal state of the object.
+            </summary>
+        </member>
+        <member name="M:Nine.World.#ctor">
+            <summary>
+            Initializes a new instance of <c>World</c>.
+            </summary>
+        </member>
+        <member name="M:Nine.World.#ctor(System.Collections.Generic.IEnumerable{Nine.WorldObject})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Nine.World"/> class.
+            </summary>
+        </member>
+        <member name="M:Nine.World.Create``1(System.String)">
+            <summary>
+            Creates a new instance of the object with the specified type name.
+            </summary>
+        </member>
+        <member name="M:Nine.World.Add(Nine.WorldObject)">
+            <summary>
+            Adds the specified world object to this world.
+            </summary>
+        </member>
+        <member name="M:Nine.World.Remove(Nine.WorldObject)">
+            <summary>
+            Removes the specified world object from this world.
+            </summary>
+        </member>
+        <member name="M:Nine.World.CreateContent(Microsoft.Xna.Framework.Content.ContentManager)">
+            <summary>
+            Creates the content manager used by this world.
+            </summary>
+        </member>
+        <member name="M:Nine.World.DestroyContent">
+            <summary>
+            Destroys the content manager.
+            </summary>
+        </member>
+        <member name="M:Nine.World.GetService(System.Type)">
+            <summary>
+            Gets the service.
+            </summary>
+        </member>
+        <member name="M:Nine.World.Update(System.TimeSpan)">
+            <summary>
+            Updates all the objects managed by this world.
+            </summary>
+        </member>
+        <member name="M:Nine.World.Draw(System.TimeSpan)">
+            <summary>
+            Draws all the objects managed by this world.
+            </summary>
+        </member>
+        <member name="M:Nine.World.FromFile(System.String)">
+            <summary>
+            Loads the world from file.
+            </summary>
+        </member>
+        <member name="M:Nine.World.FromStream(System.IO.Stream)">
+            <summary>
+            Loads the world from a stream.
+            </summary>
+        </member>
+        <member name="M:Nine.World.Save(System.String)">
+            <summary>
+            Saves the world to a file.
+            </summary>
+        </member>
+        <member name="M:Nine.World.Save(System.IO.Stream)">
+            <summary>
+            Saves the world to a stream.
+            </summary>
+        </member>
+        <member name="P:Nine.World.Version">
+            <summary>
+            Gets or sets the version of this world.
+            </summary>
+        </member>
+        <member name="P:Nine.World.Prototypes">
+            <summary>
+            Gets a dictionary of prototypes that can be created though the IObjectFactory service.
+            </summary>
+        </member>
+        <member name="P:Nine.World.WorldObjects">
+            <summary>
+            Gets a collection of world objects managed by this world.
+            </summary>
+        </member>
+        <member name="P:Nine.World.Content">
+            <summary>
+            Gets the content manager of this world.
+            </summary>
+        </member>
+        <member name="P:Nine.World.Services">
+            <summary>
+            Gets the services used by this world.
+            </summary>
+        </member>
+        <member name="E:Nine.World.Updating">
+            <summary>
+            Occurs when the world is updating itself.
+            </summary>
+        </member>
+        <member name="E:Nine.World.Drawing">
+            <summary>
+            Occurs when the world is drawing itself.
+            </summary>
+        </member>
+        <member name="T:Nine.WorldObject">
+            <summary>
+            Defines an object that has a position, rotation and scale.
+            </summary>
+        </member>
+        <member name="T:Nine.ITransformable">
+            <summary>
+            Defines an object that can be transformed.
+            </summary>
+        </member>
+        <member name="P:Nine.ITransformable.Transform">
+            <summary>
+            Gets or sets the transform.
+            </summary>
+        </member>
+        <member name="T:Nine.ICloneable">
+            <summary>
+            Supports cloning, which creates a new instance of a class with the same value
+            as an existing instance.
+            </summary>
+        </member>
+        <member name="M:Nine.ICloneable.Clone">
+            <summary>
+            Creates a new object that is a copy of the current instance.
+            </summary>
+        </member>
+        <member name="M:Nine.WorldObject.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Nine.WorldObject"/> class.
+            </summary>
+        </member>
+        <member name="M:Nine.WorldObject.#ctor(System.Collections.Generic.IEnumerable{System.Object})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Nine.WorldObject"/> class.
+            </summary>
+        </member>
+        <member name="M:Nine.WorldObject.#ctor(System.String,System.Collections.Generic.IEnumerable{System.Object})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Nine.WorldObject"/> class.
+            </summary>
+        </member>
+        <member name="M:Nine.WorldObject.Find``1">
+            <summary>
+            Find the first feature of type T owned by this game object container.
+            </summary>
+        </member>
+        <member name="M:Nine.WorldObject.ToString">
+            <summary>
+            Returns a <see cref="T:System.String"/> that represents this instance.
+            </summary>
+        </member>
+        <member name="M:Nine.WorldObject.Clone">
+            <summary>
+            Creates a new object that is a copy of the current instance.
+            </summary>
+        </member>
+        <member name="P:Nine.WorldObject.World">
+            <summary>
+            Gets the containing world of this world object.
+            </summary>
+        </member>
+        <member name="P:Nine.WorldObject.Components">
+            <summary>
+            Gets a collection of components for this game object container.
+            </summary>
+        </member>
+        <member name="P:Nine.WorldObject.Position">
+            <summary>
+            Gets or sets the position of this world object.
+            </summary>
+        </member>
+        <member name="P:Nine.WorldObject.Transform">
+            <summary>
+            Gets or sets the transform of this world object.
+            </summary>
+        </member>
+        <member name="P:Nine.WorldObject.Name">
+            <summary>
+            Gets or sets the name of this <see cref="T:Nine.WorldObject"/>.
+            </summary>
+        </member>
+        <member name="P:Nine.WorldObject.Tag">
+            <summary>
+            Gets or sets the tag of this <see cref="T:Nine.WorldObject"/>.
+            </summary>
+        </member>
+        <member name="T:Nine.LineSegment">
+            <summary>
+            Defines a line segment in 2D space.
+            </summary>
+        </member>
+        <member name="F:Nine.LineSegment.Start">
+            <summary>
+            Gets or sets the start point of this <see cref="T:Nine.LineSegment"/>.
+            </summary>
+        </member>
+        <member name="F:Nine.LineSegment.End">
+            <summary>
+            Gets or sets the end point of this <see cref="T:Nine.LineSegment"/>.
+            </summary>
+        </member>
+        <member name="M:Nine.LineSegment.#ctor(Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Vector2)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Nine.LineSegment"/> struct.
+            </summary>
+        </member>
+        <member name="M:Nine.LineSegment.Length">
+            <summary>
+            Gets the length of this <see cref="T:Nine.LineSegment"/>.
+            </summary>
+        </member>
+        <member name="M:Nine.LineSegment.LengthSquared">
+            <summary>
+            Gets the squared length of this <see cref="T:Nine.LineSegment"/>.
+            </summary>
+        </member>
+        <member name="M:Nine.LineSegment.Offset(System.Single)">
+            <summary>
+            Moves this <see cref="T:Nine.LineSegment"/> along its normal for the specified length.
+            </summary>
+        </member>
+        <member name="M:Nine.LineSegment.Equals(Nine.LineSegment)">
+            <summary>
+            Indicates whether the current object is equal to another object of the same type.
+            </summary>
+        </member>
+        <member name="M:Nine.LineSegment.Equals(System.Object)">
+            <summary>
+            Determines whether the specified <see cref="T:System.Object"/> is equal to this instance.
+            </summary>
+        </member>
+        <member name="M:Nine.LineSegment.op_Equality(Nine.LineSegment,Nine.LineSegment)">
+            <summary>
+            Implements the operator ==.
+            </summary>
+        </member>
+        <member name="M:Nine.LineSegment.op_Inequality(Nine.LineSegment,Nine.LineSegment)">
+            <summary>
+            Implements the operator !=.
+            </summary>
+        </member>
+        <member name="M:Nine.LineSegment.GetHashCode">
+            <summary>
+            Returns a hash code for this instance.
+            </summary>
+        </member>
+        <member name="M:Nine.LineSegment.ToString">
+            <summary>
+            Returns a <see cref="T:System.String"/> that represents this instance.
+            </summary>
+        </member>
+        <member name="P:Nine.LineSegment.Normal">
+            <summary>
+            Gets the normal of this <see cref="T:Nine.LineSegment"/>.
+            </summary>
+        </member>
+        <member name="P:Nine.LineSegment.Center">
+            <summary>
+            Gets the center of this <see cref="T:Nine.LineSegment"/>.
+            </summary>
+        </member>
+        <member name="T:Nine.SpatialQuery`2">
+            <summary>
+            Represents an adapter class that filters and converts the result of
+            an existing <c>SpatialQuery</c>.
+            </summary>
+        </member>
+        <member name="P:Nine.SpatialQuery`2.InnerQueries">
+            <summary>
+            Gets or sets the inner query.
+            </summary>
+        </member>
+        <member name="P:Nine.SpatialQuery`2.Filter">
+            <summary>
+            Gets or sets a predicate that filters the result of the inner query.
+            Objects passed the predicated will be included in the query.
+            </summary>
+        </member>
+        <member name="P:Nine.SpatialQuery`2.Converter">
+            <summary>
+            Gets or sets a predicate that converts the result of the inner query.
+            </summary>
+        </member>
+        <member name="T:Nine.SpatialQuery`1">
+            <summary>
+            Represents a basic query from fixed list.
+            </summary>
+        </member>
+        <member name="T:Nine.Strings">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Nine.Strings.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Nine.Strings.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Nine.Strings.AlreadyAddedToASceneManager">
+            <summary>
+              Looks up a localized string similar to The input has already been added to a scene manager..
+            </summary>
+        </member>
+        <member name="P:Nine.Strings.AlreadyInBeginEndPair">
+            <summary>
+              Looks up a localized string similar to Begin cannot be called until End has been successfully called..
+            </summary>
+        </member>
+        <member name="P:Nine.Strings.AvatarNotReady">
+            <summary>
+              Looks up a localized string similar to Cannot perform this operation when the avatar is not loaded..
+            </summary>
+        </member>
+        <member name="P:Nine.Strings.CannotDecomposeMatrix">
+            <summary>
+              Looks up a localized string similar to Target matrix cannot be decomposed..
+            </summary>
+        </member>
+        <member name="P:Nine.Strings.CircularDependency">
+            <summary>
+              Looks up a localized string similar to Circular dependency has found, the operation cannot continue..
+            </summary>
+        </member>
+        <member name="P:Nine.Strings.CustomEffectNotSupported">
+            <summary>
+              Looks up a localized string similar to Custom effect is not supported on Windows Phone..
+            </summary>
+        </member>
+        <member name="P:Nine.Strings.ExcceedsObjectManagerBounds">
+            <summary>
+              Looks up a localized string similar to The input is outside the boundary of this object manager..
+            </summary>
+        </member>
+        <member name="P:Nine.Strings.InvalidateSkeleton">
+            <summary>
+              Looks up a localized string similar to The bone transforms of the input skeleton is not valid..
+            </summary>
+        </member>
+        <member name="P:Nine.Strings.InvalidAvatarAnimationClip">
+            <summary>
+              Looks up a localized string similar to The input animation clip is not a valid avatar animation..
+            </summary>
+        </member>
+        <member name="P:Nine.Strings.InvalidGraphicsProfile">
+            <summary>
+              Looks up a localized string similar to The specified graphics profile is not supported..
+            </summary>
+        </member>
+        <member name="P:Nine.Strings.InvalidPrimitive">
+            <summary>
+              Looks up a localized string similar to The input primitive is invalid..
+            </summary>
+        </member>
+        <member name="P:Nine.Strings.LinkedEffectNotSupported">
+            <summary>
+              Looks up a localized string similar to Linked effect is not supported on Windows Phone..
+            </summary>
+        </member>
+        <member name="P:Nine.Strings.NodeMustBeAPartOfTheTree">
+            <summary>
+              Looks up a localized string similar to The node must be a child of this tree..
+            </summary>
+        </member>
+        <member name="P:Nine.Strings.NotADrawableView">
+            <summary>
+              Looks up a localized string similar to The target object is not a drawable view..
+            </summary>
+        </member>
+        <member name="P:Nine.Strings.NotInBeginEndPair">
+            <summary>
+              Looks up a localized string similar to Begin must be called successfully before End can be called..
+            </summary>
+        </member>
+        <member name="P:Nine.Strings.ParticleEffectAlreadyTriggered">
+            <summary>
+              Looks up a localized string similar to The input particle effect has already been triggerd..
+            </summary>
+        </member>
+        <member name="P:Nine.Strings.PrimitiveTooLarge">
+            <summary>
+              Looks up a localized string similar to The Input primitive is too large for a single draw call. Try increase the capability of PrimitiveBatch..
+            </summary>
+        </member>
+        <member name="P:Nine.Strings.ServiceNotFound">
+            <summary>
+              Looks up a localized string similar to Cannot find the required service: {0}.
+            </summary>
+        </member>
+        <member name="P:Nine.Strings.SkeletonMismatch">
+            <summary>
+              Looks up a localized string similar to The shared skeleton does not match the skeleton used by this model..
+            </summary>
+        </member>
+        <member name="P:Nine.Strings.SkeletonNotSupportSkin">
+            <summary>
+              Looks up a localized string similar to The input skeleton does not support skinning..
+            </summary>
+        </member>
+        <member name="T:Nine.Triangle">
+            <summary>
+            Defines a 3D triangle made up of tree vertices.
+            </summary>
+        </member>
+        <member name="F:Nine.Triangle.V1">
+            <summary>
+            Gets or sets the first vertex.
+            </summary>
+        </member>
+        <member name="F:Nine.Triangle.V2">
+            <summary>
+            Gets or sets the second vertex.
+            </summary>
+        </member>
+        <member name="F:Nine.Triangle.V3">
+            <summary>
+            Gets or sets the third vertex.
+            </summary>
+        </member>
+        <member name="M:Nine.Triangle.#ctor(Microsoft.Xna.Framework.Vector3,Microsoft.Xna.Framework.Vector3,Microsoft.Xna.Framework.Vector3)">
+            <summary>
+            Create a new instance of Triangle.
+            </summary>
+        </member>
+        <member name="M:Nine.Triangle.Intersects(Microsoft.Xna.Framework.Ray)">
+            <summary>
+            Checks whether the current Triangle intersects a Ray.
+            </summary>
+        </member>
+        <member name="M:Nine.Triangle.Intersects(Microsoft.Xna.Framework.Ray@,System.Nullable{System.Single}@)">
+            <summary>
+            Checks whether the current Triangle intersects a Ray.
+            </summary>
+        </member>
+        <member name="M:Nine.Triangle.Intersects(Microsoft.Xna.Framework.Vector3,Microsoft.Xna.Framework.Vector3)">
+            <summary>
+            Checks whether the current Triangle intersects a line segment.
+            </summary>
+            <returns>
+            The distance between the intersection point and v1.
+            </returns>
+        </member>
+        <member name="M:Nine.Triangle.Intersects(Microsoft.Xna.Framework.Vector3@,Microsoft.Xna.Framework.Vector3@,System.Nullable{System.Single}@)">
+            <summary>
+            Checks whether the current Triangle intersects a line segment.
+            </summary>
+        </member>
+        <member name="M:Nine.Triangle.Equals(Nine.Triangle)">
+            <summary>
+            Indicates whether the current object is equal to another object of the same type.
+            </summary>
+            <param name="other">An object to compare with this object.</param>
+            <returns>
+            true if the current object is equal to the <paramref name="other"/> parameter; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:Nine.Triangle.Equals(System.Object)">
+            <summary>
+            Determines whether the specified <see cref="T:System.Object"/> is equal to this instance.
+            </summary>
+            <param name="obj">The <see cref="T:System.Object"/> to compare with this instance.</param>
+            <returns>
+              <c>true</c> if the specified <see cref="T:System.Object"/> is equal to this instance; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:Nine.Triangle.op_Equality(Nine.Triangle,Nine.Triangle)">
+            <summary>
+            Implements the operator ==.
+            </summary>
+            <param name="value1">The value1.</param>
+            <param name="value2">The value2.</param>
+            <returns>
+            The result of the operator.
+            </returns>
+        </member>
+        <member name="M:Nine.Triangle.op_Inequality(Nine.Triangle,Nine.Triangle)">
+            <summary>
+            Implements the operator !=.
+            </summary>
+            <param name="value1">The value1.</param>
+            <param name="value2">The value2.</param>
+            <returns>
+            The result of the operator.
+            </returns>
+        </member>
+        <member name="M:Nine.Triangle.GetHashCode">
+            <summary>
+            Returns a hash code for this instance.
+            </summary>
+            <returns>
+            A hash code for this instance, suitable for use in hashing algorithms and data structures like a hash table. 
+            </returns>
+        </member>
+        <member name="M:Nine.Triangle.ToString">
+            <summary>
+            Returns a <see cref="T:System.String"/> that represents this instance.
+            </summary>
+            <returns>
+            A <see cref="T:System.String"/> that represents this instance.
+            </returns>
+        </member>
+        <member name="T:Nine.Math2D">
+            <summary>
+            Helper class for 2D math and geometries
+            
+            Thanks for the code from Mat Buckland (fup@ai-junkie.com)
+            </summary>
+        </member>
+        <member name="F:Nine.Math2D.Epsilon">
+            <summary>
+            Default epsilion used all over Math2D
+            </summary>
+        </member>
+        <member name="M:Nine.Math2D.FloatEquals(System.Single,System.Single)">
+            <summary>
+            Test to see if two float equals using epslion
+            </summary>
+        </member>
+        <member name="M:Nine.Math2D.FloatEqualsZero(System.Single)">
+            <summary>
+            Test to see if a float equals zero using epslion
+            </summary>
+        </member>
+        <member name="M:Nine.Math2D.WorldToLocal(Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Vector2,System.Single)">
+            <summary>
+            Transform a world point p to local space specified by position and rotation
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Nine.Math2D.LocalToWorld(Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Vector2,System.Single)">
+            <summary>
+            Transform a local point p to world space specified by position and rotation
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Nine.Math2D.RayPlaneIntersects(Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Vector2)">
+            <summary>
+            given a plane and a ray this function determines how far along the ray 
+            an intersection occurs. Returns null if the ray is parallel
+            </summary>
+        </member>
+        <member name="M:Nine.Math2D.PointLineRelation(Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Vector2)">
+            <summary>
+            Gets the relation between a point and a plane
+            </summary>
+        </member>
+        <member name="M:Nine.Math2D.RayCircleIntersectionTest(Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Vector2,System.Single)">
+            <summary>
+            Test to see if a ray intersects a circle
+            </summary>
+        </member>
+        <member name="M:Nine.Math2D.RayCircleIntersects(Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Vector2,System.Single)">
+            <summary>
+            Whether a ray intersects a circle
+            </summary>
+        </member>
+        <member name="M:Nine.Math2D.GetTangentPoints(Microsoft.Xna.Framework.Vector2,System.Single,Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Vector2@,Microsoft.Xna.Framework.Vector2@)">
+            <summary>
+            Given a point P and a circle of radius R centered at C this function
+            determines the two points on the circle that intersect with the 
+            tangents from P to the circle. Returns false if P is within the circle.
+            thanks to Dave Eberly for this one.
+            </summary>
+        </member>
+        <member name="M:Nine.Math2D.DistanceToLineSegment(Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Vector2)">
+            <summary>
+            given a line segment AB and a point P, this function returns the
+            shortest distance between a point on AB and P.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Nine.Math2D.DistanceToLine(Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Vector2)">
+            <summary>
+            given a line AB and a point P, this function returns the
+            shortest distance between a line AB and P.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Nine.Math2D.DistanceToLineSquared(Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Vector2)">
+            <summary>
+            given a line AB and a point P, this function returns the
+            shortest distance between a line AB and P.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Nine.Math2D.DistanceToLineSegment(Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Vector2@)">
+            <summary>
+            given a line segment AB and a point P, this function returns the
+            shortest distance between a point on AB and P.
+            N represents the vector from the closest point on AB to P.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Nine.Math2D.DistanceToLineSegmentSquared(Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Vector2)">
+            <summary>
+            given a line segment AB and a point P, this function returns the
+            shortest distance squared between a point on AB and P.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Nine.Math2D.DistanceToRectangle(Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Vector2,System.Single,Microsoft.Xna.Framework.Vector2)">
+            <summary>
+            Gets the nearest distance from point P to the specified rectangle
+            </summary>
+        </member>
+        <member name="M:Nine.Math2D.LineSegmentIntersects(Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Vector2)">
+            <summary>
+            Given 2 lines in 2D space AB, CD this returns true if an 
+            intersection occurs.
+            </summary>
+        </member>
+        <member name="M:Nine.Math2D.LineSegmentIntersectionTest(Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Vector2)">
+            <summary>
+            Given 2 lines in 2D space AB, CD this returns true if an 
+            intersection occurs and sets dist to the distance the intersection
+            occurs along AB. Also sets the 2d vector point to the point of
+            intersection
+            </summary>
+        </member>
+        <member name="M:Nine.Math2D.LineSegmentIntersectionTest(Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Vector2,System.Single@,Microsoft.Xna.Framework.Vector2@)">
+            <summary>
+            Given 2 lines in 2D space AB, CD this returns true if an 
+            intersection occurs and sets dist to the distance the intersection
+            occurs along AB. Also sets the 2d vector point to the point of
+            intersection
+            </summary>
+        </member>
+        <member name="M:Nine.Math2D.PolygonIntersects(Microsoft.Xna.Framework.Vector2[],Microsoft.Xna.Framework.Vector2[])">
+            <summary>
+            Tests two polygons for intersection.
+            </summary>
+            <remarks>This algorithm does not check for enclosure</remarks>
+        </member>
+        <member name="M:Nine.Math2D.PolygonSegmentIntersects(Microsoft.Xna.Framework.Vector2[],Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Vector2)">
+            <summary>
+            Tests to see if a polygon and a line segment intersects
+            </summary>
+            <remarks>This algorithm does not check for enclosure</remarks>
+        </member>
+        <member name="M:Nine.Math2D.CircleIntersects(Microsoft.Xna.Framework.Vector2,System.Single,Microsoft.Xna.Framework.Vector2,System.Single)">
+            <summary>
+            Tests to see if two circle overlaps
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Nine.Math2D.CircleIntersectionPoints(Microsoft.Xna.Framework.Vector2,System.Single,Microsoft.Xna.Framework.Vector2,System.Single,Microsoft.Xna.Framework.Vector2@,Microsoft.Xna.Framework.Vector2@)">
+            <summary>
+            Given two circles this function calculates the intersection points
+            of any overlap. This function assumes that the two circles overlaps.
+            
+            see http://astronomy.swin.edu.au/~pbourke/geometry/2circle/
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Nine.Math2D.PointInCircle(Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Vector2,System.Single)">
+            <summary>
+            Tests to see if a point is in a circle
+            </summary>
+        </member>
+        <member name="M:Nine.Math2D.LineSegmentCircleIntersects(Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Vector2,System.Single)">
+            <summary>
+            Returns true if the line segemnt AB intersects with a circle at
+            position P with radius r
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Nine.Math2D.LineSegmentCircleClosestIntersectionPoint(Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Vector2,System.Single)">
+            <summary>
+            Given a line segment AB and a circle position and radius, this function
+            determines if there is an intersection and stores the position of the 
+            closest intersection in the reference IntersectionPoint.
+            
+            returns null if no intersection point is found
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Nine.Math2D.PointInRectangle(Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Vector2)">
+            <summary>
+            Tests to see if a rectangle contains a point.
+            Note that min should be smaller than max.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Nine.Math2D.PointInRectangle(Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Vector2,System.Single)">
+            <summary>
+            Tests to see if a rectangle contains a point. 
+            v1 and v2 are in local space relative to position and rotation
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Nine.Math2D.LineSegmentRectangleIntersects(Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Vector2)">
+            <summary>
+            Tests to see if a rectangle and a line segment intersects.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Nine.Math2D.RectangleIntersects(Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Vector2,System.Single,Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Vector2,System.Single)">
+            <summary>
+            Returns true if two rectangles intersect.
+            This algorithm does not check for enclosure
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Nine.Math2D.RectangleCircleIntersects(Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Vector2,System.Single,Microsoft.Xna.Framework.Vector2,System.Single)">
+            <summary>
+            Returns true if a rectangle and a circle intersects.
+            This algorithm does not check for enclosure.
+            </summary>
+        </member>
+        <member name="T:Nine.Math2D.SpanType">
+            <summary>
+            Span relation
+            </summary>
+        </member>
+        <member name="T:Nine.Octree`1">
+            <summary>
+            Represents a space partition structure based on Octree.
+            </summary>
+        </member>
+        <member name="F:Nine.Octree`1.ChildCount">
+            <summary>
+            Specifies the total number of child nodes (8) in the Octree.
+            </summary>
+        </member>
+        <member name="M:Nine.Octree`1.#ctor">
+            <summary>
+            For serialization.
+            </summary>
+        </member>
+        <member name="M:Nine.Octree`1.#ctor(Microsoft.Xna.Framework.BoundingBox,System.Int32)">
+            <summary>
+            Creates a new Octree with the specified boundary.
+            </summary>
+        </member>
+        <member name="P:Nine.Octree`1.Bounds">
+            <summary>
+            Gets the bounds of the Octree.
+            </summary>
+        </member>
+        <member name="T:Nine.OctreeNode`1">
+            <summary>
+            Represents a node in Octree.
+            </summary>
+        </member>
+        <member name="P:Nine.OctreeNode`1.Bounds">
+            <summary>
+            Gets the bounds of the Octree node.
+            </summary>
+        </member>
+        <member name="T:Nine.QuadTree`1">
+            <summary>
+            Represents a space partition structure based on QuadTree.
+            </summary>
+        </member>
+        <member name="F:Nine.QuadTree`1.ChildCount">
+            <summary>
+            Specifies the total number of child nodes (4) in the QuadTree.
+            </summary>
+        </member>
+        <member name="M:Nine.QuadTree`1.#ctor">
+            <summary>
+            For serialization.
+            </summary>
+        </member>
+        <member name="M:Nine.QuadTree`1.#ctor(Nine.BoundingRectangle,System.Int32)">
+            <summary>
+            Creates a new Octree with the specified boundary.
+            </summary>
+        </member>
+        <member name="P:Nine.QuadTree`1.Bounds">
+            <summary>
+            Gets the bounds of the QuadTree node.
+            </summary>
+        </member>
+        <member name="T:Nine.QuadTreeNode`1">
+            <summary>
+            Represents a node in QuadTree.
+            </summary>
+        </member>
+        <member name="P:Nine.QuadTreeNode`1.Bounds">
+            <summary>
+            Gets the bounds of the QuadTree node.
+            </summary>
+        </member>
+        <member name="T:Nine.Range`1">
+            <summary>
+            A generic struct that contains a Min and Max value.
+            </summary>
+        </member>
+        <member name="F:Nine.Range`1.Min">
+            <summary>
+            Gets or sets the minimum value.
+            </summary>
+        </member>
+        <member name="F:Nine.Range`1.Max">
+            <summary>
+            Gets or sets the maximum value.
+            </summary>
+        </member>
+        <member name="M:Nine.Range`1.#ctor(`0)">
+            <summary>
+            Create a new instance of Range object from a single value.
+            </summary>
+        </member>
+        <member name="M:Nine.Range`1.#ctor(`0,`0)">
+            <summary>
+            Create a new instance of Range object from two values.
+            </summary>
+        </member>
+        <member name="M:Nine.Range`1.op_Implicit(`0)~Nine.Range{`0}">
+            <summary>
+            Create a new instance of Range object from a single value.
+            </summary>
+        </member>
+        <member name="M:Nine.Range`1.Equals(Nine.Range{`0})">
+            <summary>
+            Test if the current Range is equal to another Range.
+            </summary>
+            <param name="other">The Range to compare.</param>
+            <returns>True if the other is equal.</returns>
+        </member>
+        <member name="M:Nine.Range`1.Equals(System.Object)">
+            <summary>
+            Test if the current Range is equal to a specified object.
+            </summary>
+            <param name="other">The object to compare.</param>
+            <returns>True if the object is equal.</returns>
+        </member>
+        <member name="M:Nine.Range`1.op_Equality(Nine.Range{`0},Nine.Range{`0})">
+            <summary>
+            Test if two Range values are equal.
+            </summary>
+            <param name="value1">The first value to compare.</param>
+            <param name="value2">The second value to compare.</param>
+            <returns>True if the values are equal.</returns>
+        </member>
+        <member name="M:Nine.Range`1.op_Inequality(Nine.Range{`0},Nine.Range{`0})">
+            <summary>
+            Test if two Range values are unequal.
+            </summary>
+            <param name="value1">The first value to compare.</param>
+            <param name="value2">The second value to compare.</param>
+            <returns>True if the values are unequal.</returns>
+        </member>
+        <member name="M:Nine.Range`1.Clamp``1(``0)">
+            <summary>
+            Force a value to lie within a Range.
+            </summary>
+            <param name="value">The value to test.</param>
+            <returns>The value, or Min or Max if it lies outside the range.</returns>
+        </member>
+        <member name="M:Nine.Range`1.Contains``1(``0)">
+            <summary>
+            Test whether a value lies within a range.
+            </summary>
+            <param name="value">The value to test.</param>
+            <returns>True if value lies within the range.</returns>
+        </member>
+        <member name="T:Nine.ISurface">
+            <summary>
+            Interface for a surface with Z axis facing up.
+            </summary>
+        </member>
+        <member name="M:Nine.ISurface.TryGetHeightAndNormal(Microsoft.Xna.Framework.Vector3,System.Single@,Microsoft.Xna.Framework.Vector3@)">
+            <summary>
+            Gets the height and normal of the specifed position on the surface.
+            </summary>
+            <returns>
+            Returns true if the point resides in the boundary of the surface.
+            </returns>
+        </member>
+        <member name="T:Nine.FlatSurface">
+            <summary>
+            A simple flat surface that implements <see cref="T:Nine.ISurface"/>.
+            </summary>
+        </member>
+        <member name="M:Nine.FlatSurface.TryGetHeightAndNormal(Microsoft.Xna.Framework.Vector3,System.Single@,Microsoft.Xna.Framework.Vector3@)">
+            <summary>
+            Gets the height and normal of the specifed position on the surface.
+            </summary>
+            <returns>
+            Returns true if the point resides in the boundary of the surface.
+            </returns>
+        </member>
+        <member name="P:Nine.FlatSurface.Height">
+            <summary>
+            Gets or sets the height of this flat surface.
+            </summary>
+        </member>
+        <member name="T:Nine.SurfaceCollection">
+            <summary>
+            A collection of surfaces that can be queried together.
+            </summary>
+        </member>
+        <member name="M:Nine.SurfaceCollection.TryGetHeightAndNormal(Microsoft.Xna.Framework.Vector3,System.Single@,Microsoft.Xna.Framework.Vector3@)">
+            <summary>
+            Gets the height and normal of the specifed position on the surface.
+            </summary>
+            <returns>
+            Returns true if the point resides in the boundary of the surface.
+            </returns>
+        </member>
+        <member name="P:Nine.SurfaceCollection.ObjectHeight">
+            <summary>
+            Gets or sets the height of the object used to query surface height and normal.
+            </summary>
+        </member>
+        <member name="T:Nine.IPickable">
+            <summary>
+            Interface for an object that can be picked by a given ray.
+            </summary>
+        </member>
+        <member name="M:Nine.IPickable.Contains(Microsoft.Xna.Framework.Vector3)">
+            <summary>
+            Gets wether the object contains the given point.
+            </summary>
+        </member>
+        <member name="M:Nine.IPickable.Intersects(Microsoft.Xna.Framework.Ray)">
+            <summary>
+            Gets the nearest intersection point from the specifed picking ray.
+            </summary>
+            <returns>Distance to the start of the ray.</returns>
+        </member>
+        <member name="T:Nine.RayExtensions">
+            <summary>
+            Contains extension method for Ray.
+            </summary>
+        </member>
+        <member name="M:Nine.RayExtensions.Intersects(Microsoft.Xna.Framework.Ray,Nine.IGeometry)">
+            <summary>
+            Tests to see if a geometry intersects with the specified ray.
+            If a bounding sphere is provided, the algorithm will perform bounding sphere
+            intersection test before per triangle test.
+            
+            The geometry and bounding sphere will be transformed by the specified
+            transformation matrix before and intersection tests.
+            </summary>
+        </member>
+        <member name="M:Nine.RayExtensions.Intersects(Microsoft.Xna.Framework.Ray,Nine.Triangle)">
+            <summary>
+            Checks whether a ray intersects a triangle.
+            </summary>
+        </member>
+        <member name="M:Nine.RayExtensions.Intersects(Microsoft.Xna.Framework.Ray,Nine.Triangle@,System.Nullable{System.Single}@)">
+            <summary>
+            Checks whether a ray intersects a triangle.
+            </summary>
+        </member>
+        <member name="M:Nine.RayExtensions.Intersects(Microsoft.Xna.Framework.Ray,Microsoft.Xna.Framework.Vector3@,Microsoft.Xna.Framework.Vector3@,Microsoft.Xna.Framework.Vector3@,System.Nullable{System.Single}@)">
+            <summary>
+            Checks whether a ray intersects a triangle.
+            </summary>
+            <remarks> 
+            This uses the algorithm
+            developed by Tomas Moller and Ben Trumbore, which was published in the
+            Journal of Graphics Tools, volume 2, "Fast, Minimum Storage Ray-Triangle
+            Intersection".
+            
+            This method is implemented using the pass-by-reference versions of the
+            XNA math functions. Using these overloads is generally not recommended,
+            because they make the code less readable than the normal pass-by-value
+            versions. This method can be called very frequently in a tight inner loop,
+            however, so in this particular case the performance benefits from passing
+            everything by reference outweigh the loss of readability.
+            </remarks>
+        </member>
+        <member name="M:Nine.RayExtensions.Transform(Microsoft.Xna.Framework.Ray,Microsoft.Xna.Framework.Matrix)">
+            <summary>
+            Creates a new ray that is the transformed by the input matrix
+            </summary>
+        </member>
+        <member name="M:Nine.RayExtensions.Transform(Microsoft.Xna.Framework.Ray,Microsoft.Xna.Framework.Matrix@,Microsoft.Xna.Framework.Ray@)">
+            <summary>
+            Creates a new ray that is the transformed by the input matrix
+            </summary>
+        </member>
+        <member name="T:Nine.RotationOrder">
+            <summary>
+            Defines the rotation order for 3D rotations. 
+            The default value is Zxy which is equivalent to Matrix.CreateFromYawPitchRoll.
+            </summary>
+        </member>
+        <member name="F:Nine.RotationOrder.Zxy">
+            <summary>
+            The rotation will be around z, x and y axis in that order.
+            This is equivalent to Matrix.CreateFromYawPitchRoll.
+            </summary>
+        </member>
+        <member name="F:Nine.RotationOrder.Yxz">
+            <summary>
+            The rotation will be around y, x and z axis in that order.
+            </summary>
+        </member>
+        <member name="T:Nine.Interpolate`1">
+            <summary>
+            A method used to interpolate the specified type.
+            </summary>
+        </member>
+        <member name="T:Nine.LerpHelper">
+            <summary>
+            Helper class to interpolate common types.
+            </summary>
+        </member>
+        <member name="M:Nine.LerpHelper.Slerp(Microsoft.Xna.Framework.Matrix,Microsoft.Xna.Framework.Matrix,System.Single)">
+            <summary>
+            Roughly decomposes two matrices and performs spherical linear interpolation
+            </summary>
+            <param name="a">Source matrix for interpolation</param>
+            <param name="b">Destination matrix for interpolation</param>
+            <param name="amount">Ratio of interpolation</param>
+            <returns>The interpolated matrix</returns>
+        </member>
+        <member name="M:Nine.LerpHelper.WeightedSum(System.Collections.Generic.IEnumerable{Microsoft.Xna.Framework.Quaternion},System.Collections.Generic.IEnumerable{System.Single},System.Int32)">
+            <summary>
+            Implemements a weighted sum algorithm of quaternions.
+            See http://en.wikipedia.org/wiki/Generalized_quaternion_interpolation for detailed math formulars.
+            </summary>
+        </member>
+        <member name="T:Nine.MatrixHelper">
+            <summary>
+            Contains helper method for Matrix.
+            </summary>
+        </member>
+        <member name="T:Nine.Animations.Easing">
+            <summary>
+            Defines in which direction will the transition be eased.
+            </summary>
+        </member>
+        <member name="F:Nine.Animations.Easing.In">
+            <summary>
+            Eased when transiting in.
+            </summary>
+        </member>
+        <member name="F:Nine.Animations.Easing.Out">
+            <summary>
+            Eased when transiting out.
+            </summary>
+        </member>
+        <member name="F:Nine.Animations.Easing.InOut">
+            <summary>
+            Eased when both transiting in and out.
+            </summary>
+        </member>
+        <member name="T:Nine.Animations.TweenAnimation`1">
+            <summary>
+            Implements a basic primitive animation that changes its value over time.
+            Can also update the value of a named target property on an target object.
+            </summary>
+        </member>
+        <member name="T:Nine.ISupportTarget">
+            <summary>
+            This interface supports the infrastructure of the framework and is not 
+            intended to be used by externals.
+            </summary>
+        </member>
+        <member name="P:Nine.ISupportTarget.Target">
+            <summary>
+            Gets or sets the target.
+            </summary>
+        </member>
+        <member name="P:Nine.ISupportTarget.TargetProperty">
+            <summary>
+            Gets or sets the target property.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.TweenAnimation`1.#ctor">
+            <summary>
+            Create a new instance of tweener.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.TweenAnimation`1.#ctor(Nine.Interpolate{`0},Nine.Operator{`0})">
+            <summary>
+            Create a new instance of tweener.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.TweenAnimation`1.OnStarted">
+            <summary>
+            Plays the animation from start.
+            </summary>
+        </member>
+        <member name="M:Nine.Animations.TweenAnimation`1.OnSeek(System.TimeSpan,System.TimeSpan)">
+            <summary>
+            Called when seek.
+            </summary>
+        </member>
+        <member name="P:Nine.Animations.TweenAnimation`1.From">
+            <summary>
+            Gets or sets where the tween starts.
+            Specify null to use the current property value of the object being animated.
+            </summary>
+        </member>
+        <member name="P:Nine.Animations.TweenAnimation`1.To">
+            <summary>
+            Gets or sets where then tween ends.
+            Specify null to control the end position using <c>By</c>.
+            </summary>
+        </member>
+        <member name="P:Nine.Animations.TweenAnimation`1.By">
+            <summary>
+            Gets or sets where the tween ends relative to start position.
+            Specify null to control the end position using <c>To</c>.
+            </summary>
+        </member>
+        <member name="P:Nine.Animations.TweenAnimation`1.Value">
+            <summary>
+            Gets the current value of this tween animation.
+            </summary>
+        </member>
+        <member name="P:Nine.Animations.TweenAnimation`1.Easing">
+            <summary>
+            Gets or sets the easing mode used by this tween animation.
+            </summary>
+        </member>
+        <member name="P:Nine.Animations.TweenAnimation`1.Curve">
+            <summary>
+            Gets or sets the curve that controls the detailed motion of this
+            tween animation.
+            </summary>
+        </member>
+        <member name="P:Nine.Animations.TweenAnimation`1.Duration">
+            <summary>
+            Gets or sets the duration of this animation.
+            </summary>
+        </member>
+        <member name="P:Nine.Animations.TweenAnimation`1.Target">
+            <summary>
+            Gets or sets the target object that this tweening will affect.
+            This property is not required.
+            </summary>
+        </member>
+        <member name="P:Nine.Animations.TweenAnimation`1.TargetProperty">
+            <summary>
+            Gets or sets the property or field name of the target object.
+            The property or field must be publicly visible.
+            This property is not required.
+            </summary>
+        </member>
+        <member name="T:Nine.ICurve">
+            <summary>
+            Represents a 2d curve.
+            </summary>
+        </member>
+        <member name="T:Nine.Curves">
+            <summary>
+            Contains commonly used curves.
+            </summary>
+        </member>
+        <member name="T:Nine.IBoundable">
+            <summary>
+            Interface for an object with a bounding box that can be queryed.
+            </summary>
+        </member>
+        <member name="P:Nine.IBoundable.BoundingBox">
+            <summary>
+            Gets the axis aligned bounding box in world space.
+            </summary>
+        </member>
+        <member name="T:Nine.IGeometry">
+            <summary>
+            Interface for a 3D geometry made up of triangles
+            </summary>
+        </member>
+        <member name="P:Nine.IGeometry.Transform">
+            <summary>
+            Gets the optional transformation matrix of this <see cref="T:Nine.IGeometry"/>.
+            </summary>
+        </member>
+        <member name="P:Nine.IGeometry.Positions">
+            <summary>
+            Gets a readonly list of vertex positions.
+            </summary>
+        </member>
+        <member name="P:Nine.IGeometry.Indices">
+            <summary>
+            Gets a read-only list of geometry indices.
+            </summary>
+        </member>
+        <member name="T:Nine.ISpatialQueryable">
+            <summary>
+            Interface for an object that can be queried by a scene manager.
+            </summary>
+        </member>
+        <member name="E:Nine.ISpatialQueryable.BoundingBoxChanged">
+            <summary>
+            Occurs when the bounding box changed.
+            </summary>
+        </member>
+        <member name="P:Nine.ISpatialQueryable.SpatialData">
+            <summary>
+            Gets or sets the data used for spatial query.
+            </summary>
+        </member>
+    </members>
+</doc>

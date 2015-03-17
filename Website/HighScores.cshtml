@@ -1,0 +1,93 @@
+﻿@using WebMatrix.Data
+@{
+   
+  var myImagesFolder = "/img";
+  var myStyleSheet = "/include/StyleSheet.css"; 
+  var db = Database.Open("DBNAME");
+  var selectQueryString = "SELECT * FROM HighScore ORDER BY Score DESC"; 
+  
+}
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, target-densitydpi=device-dpi">
+        <title>High Scores</title>
+        <link rel="stylesheet" type="text/css" href="@Href(myStyleSheet)" />
+        <link rel="stylesheet" type="text/css" href="//code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+        <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/plug-ins/3cfcc339e89/integration/jqueryui/dataTables.jqueryui.css">
+        <style type="text/css" class="init">
+            .tableHighscore {
+                width: 800px;
+                margin: 0 auto;
+                padding: 250px 0 0 0;
+
+            }
+	    </style>
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script type="text/javascript" src="//cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js"></script>
+        <script type="text/javascript" src="//cdn.datatables.net/plug-ins/3cfcc339e89/integration/jqueryui/dataTables.jqueryui.js"></script>
+        <script type="text/javascript"  class="init">
+          $(document).ready(function() {
+                var table = $('#example').DataTable();
+                table.column( '1:visible' ).order( 'desc' ).draw();
+            } );
+        </script>
+        
+
+    </head>
+    <body>
+        <div id="centerArea">
+            <div id="BGAngry">
+                <div class="tableHighscore">
+                    <table id="example" class="display">
+                       <thead>
+						<tr>
+                            <th>Name</th>
+							<th>Score</th>
+							<th>Time</th>							
+						</tr>
+					</thead>
+					<tfoot>
+						<tr>
+                            <th>Name</th>							
+							<th>Score</th>
+							<th>Time</th>	
+						</tr>
+					</tfoot>
+
+					<tbody>
+                    @foreach (var row in db.Query(selectQueryString))
+                     {  
+					    <tr>
+                            @if(row.Score<50)
+                            {
+                                <td>
+                                    Matan Peled
+                                </td>
+                            }
+                            @if(row.Score>=50 && row.Score<80)
+                            {
+                                <td>
+                                    Idan Schwartz
+                                </td>
+                            }
+                            @if(row.Score>=80)
+                            {
+                                <td>Maayan Kislev</td>
+                            }
+                            <td>@row.Score</td>
+                            <td>@row.Time</td>
+                        </tr>
+                      }
+					</tbody>
+                    </table> 
+                 </div>   
+            </div>
+            <div>
+            </div>
+        </div>
+    </body>
+</html>

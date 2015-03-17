@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="angrydbModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="angrydbModelStoreContainer">
+    <EntitySet Name="HighScores" EntityType="angrydbModel.Store.HighScores" store:Type="Tables" store:Schema="checkcheck" store:Name="HighScores">
+      <DefiningQuery>SELECT 
+      [HighScores].[ID] AS [ID], 
+      [HighScores].[Score] AS [Score], 
+      [HighScores].[Time] AS [Time]
+      FROM [checkcheck].[HighScores] AS [HighScores]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'angrydb.checkcheck.HighScores' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="HighScores">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="Score" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Score" Type="int" Nullable="false" />
+    <Property Name="Time" Type="datetime" />
+  </EntityType>
+</Schema>

@@ -1,0 +1,5 @@
+Content\Textures\Background.xnb
+Content\Textures\Bird.xnb
+Content\Textures\Pig.xnb
+Content\Textures\Brick.xnb
+Content\Levels\Level.xnb

@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>Levels\Level.xaml</Source>
+      <Name>Levels\Level</Name>
+      <Importer>LevelImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ischwart\Documents\Visual Studio 2010\Projects\AngryPig\AngryPig\AngryPig\AngryPig\bin\x86\Debug\Content\Levels\Level.xnb</Output>
+      <Time>2015-01-12T18:42:10.166874+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\RedBird.png</Source>
+      <Name>Textures\RedBird</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ischwart\Documents\Visual Studio 2010\Projects\AngryPig\AngryPig\AngryPig\AngryPig\bin\x86\Debug\Content\Textures\RedBird.xnb</Output>
+      <Time>2015-01-12T15:34:15.4149951+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Background.png</Source>
+      <Name>Textures\Background</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ischwart\Documents\Visual Studio 2010\Projects\AngryPig\AngryPig\AngryPig\AngryPig\bin\x86\Debug\Content\Textures\Background.xnb</Output>
+      <Time>2015-01-12T18:51:09.0846984+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Background_logo.png</Source>
+      <Name>Textures\Background_logo</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\ischwart\Documents\Visual Studio 2010\Projects\AngryPig\AngryPig\AngryPig\AngryPig\bin\x86\Debug\Content\Textures\Background_logo.xnb</Output>
+      <Time>2015-01-14T11:18:15.1757199+02:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>Reach</TargetProfile>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>C:\Users\ischwart\Documents\Visual Studio 2010\Projects\AngryPig\AngryPig\AngryPig\AngryPigContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\ischwart\Documents\Visual Studio 2010\Projects\AngryPig\AngryPig\AngryPig\AngryPig\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\ischwart\Documents\Visual Studio 2010\Projects\AngryPig\AngryPig\AngryPig\AngryPigContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\ischwart\Documents\Visual Studio 2010\Projects\AngryPig\AngryPig\AngryPig\AngryPig\bin\x86\Debug\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\windows\Microsoft.Net\assembly\GAC_MSIL\WindowsBase\v4.0_4.0.0.0__31bf3856ad364e35\WindowsBase.dll</Key>
+        <Value>2013-09-11T23:33:38+03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\windows\Microsoft.Net\assembly\GAC_MSIL\UIAutomationTypes\v4.0_4.0.0.0__31bf3856ad364e35\UIAutomationTypes.dll</Key>
+        <Value>2013-09-11T23:33:38+03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\windows\Microsoft.Net\assembly\GAC_MSIL\UIAutomationProvider\v4.0_4.0.0.0__31bf3856ad364e35\UIAutomationProvider.dll</Key>
+        <Value>2013-09-11T23:33:38+03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\windows\Microsoft.Net\assembly\GAC_MSIL\PresentationUI\v4.0_4.0.0.0__31bf3856ad364e35\PresentationUI.dll</Key>
+        <Value>2013-09-11T23:33:38+03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\windows\Microsoft.Net\assembly\GAC_MSIL\ReachFramework\v4.0_4.0.0.0__31bf3856ad364e35\ReachFramework.dll</Key>
+        <Value>2013-09-11T23:33:38+03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\windows\Microsoft.Net\assembly\GAC_MSIL\PresentationFramework\v4.0_4.0.0.0__31bf3856ad364e35\PresentationFramework.dll</Key>
+        <Value>2013-09-11T23:33:38+03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\windows\Microsoft.Net\assembly\GAC_32\PresentationCore\v4.0_4.0.0.0__31bf3856ad364e35\PresentationCore.dll</Key>
+        <Value>2013-09-11T23:33:38+03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2010-08-23T13:41:18+03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2010-08-23T13:41:18+03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2010-08-23T13:41:18+03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2010-08-23T13:41:18+03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2010-08-23T13:41:18+03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2010-08-23T13:41:18+03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Users\ischwart\Documents\Visual Studio 2010\Projects\AngryPig\AngryPig\AngryPig.Pipeline\bin\x86\Debug\AngryPig.Pipeline.dll</Key>
+        <Value>2015-01-19T21:06:58.3643033+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\windows\Microsoft.Net\assembly\GAC_MSIL\Accessibility\v4.0_4.0.0.0__b03f5f7f11d50a3a\Accessibility.dll</Key>
+        <Value>2013-09-11T22:21:54+03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2015-01-12T14:58:34.9017358+02:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>

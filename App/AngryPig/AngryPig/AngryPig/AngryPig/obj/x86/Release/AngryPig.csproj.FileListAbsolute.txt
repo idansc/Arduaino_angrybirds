@@ -1,0 +1,4 @@
+C:\Users\ischwart\Dropbox\Arduino proj\AngryPig\AngryPig\AngryPig\AngryPig\obj\x86\Release\AngryPig.csprojResolveAssemblyReference.cache
+C:\Users\ischwart\Dropbox\Arduino proj\AngryPig\AngryPig\AngryPig\AngryPig\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\ischwart\Dropbox\Arduino proj\ארודינו\App\AngryPig\AngryPig\AngryPig\AngryPig\obj\x86\Release\AngryPig.csprojResolveAssemblyReference.cache
+C:\Users\ischwart\Dropbox\Arduino proj\ארודינו\App\AngryPig\AngryPig\AngryPig\AngryPig\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt

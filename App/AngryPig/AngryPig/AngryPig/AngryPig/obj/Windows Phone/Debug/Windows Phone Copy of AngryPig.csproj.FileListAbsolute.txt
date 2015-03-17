@@ -1,0 +1,66 @@
+C:\Users\yufeih\Desktop\AngryPig\AngryPig\AngryPig\bin\Windows Phone\Debug\Content\Textures\Background.xnb
+C:\Users\yufeih\Desktop\AngryPig\AngryPig\AngryPig\bin\Windows Phone\Debug\AngryPig.dll
+C:\Users\yufeih\Desktop\AngryPig\AngryPig\AngryPig\bin\Windows Phone\Debug\AngryPig.pdb
+C:\Users\yufeih\Desktop\AngryPig\AngryPig\AngryPig\obj\Windows Phone\Debug\ResolveAssemblyReference.cache
+C:\Users\yufeih\Desktop\AngryPig\AngryPig\AngryPig\obj\Windows Phone\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\yufeih\Desktop\AngryPig\AngryPig\AngryPig\obj\Windows Phone\Debug\AngryPig.dll
+C:\Users\yufeih\Desktop\AngryPig\AngryPig\AngryPig\obj\Windows Phone\Debug\AngryPig.pdb
+C:\Users\yufeih\Desktop\AngryPig\AngryPig\AngryPig\bin\Windows Phone\Debug\AppManifest.xaml
+C:\Users\yufeih\Desktop\AngryPig\AngryPig\AngryPig\obj\Windows Phone\Debug\WMAppManifest.xml.g
+C:\Users\yufeih\Desktop\AngryPig\AngryPig\AngryPig\obj\Windows Phone\Debug\WMAppManifest.xml
+C:\Users\yufeih\Desktop\AngryPig\AngryPig\AngryPig\bin\Windows Phone\Debug\AngryPig.xap
+C:\Users\yufeih\Desktop\AngryPig\AngryPig\AngryPig\obj\Windows Phone\Debug\XapCacheFile.xml
+C:\Users\yufeih\Desktop\AngryPig\AngryPig\AngryPig\bin\Windows Phone\Debug\Content\Textures\Bird.xnb
+C:\Users\yufeih\Desktop\AngryPig\AngryPig\AngryPig\bin\Windows Phone\Debug\Content\Textures\Pig.xnb
+C:\Users\yufeih\Desktop\AngryPig\AngryPig\AngryPig\bin\Windows Phone\Debug\Content\Textures\Brick.xnb
+C:\Users\yufeih\Desktop\AngryPig\AngryPig\AngryPig\bin\Windows Phone\Debug\Content\Levels\Level.xnb
+C:\Users\yufeih\Desktop\AngryPig\AngryPig\AngryPig\bin\Windows Phone\Debug\AngryPig.Data.dll
+C:\Users\yufeih\Desktop\AngryPig\AngryPig\AngryPig\bin\Windows Phone\Debug\FarseerPhysicsXNA.dll
+C:\Users\yufeih\Desktop\AngryPig\AngryPig\AngryPig\bin\Windows Phone\Debug\AngryPig.Data.pdb
+C:\Users\ischwart\Documents\Visual Studio 2010\Projects\AngryPig\AngryPig\AngryPig\AngryPig\obj\Windows Phone\Debug\Windows Phone Copy of AngryPig.csprojResolveAssemblyReference.cache
+C:\Users\ischwart\Documents\Visual Studio 2010\Projects\AngryPig\AngryPig\AngryPig\AngryPig\obj\Windows Phone\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\ischwart\Documents\Visual Studio 2010\Projects\AngryPig\AngryPig\AngryPig\AngryPig\bin\Windows Phone\Debug\Content\Levels\Level.xnb
+C:\Users\ischwart\Documents\Visual Studio 2010\Projects\AngryPig\AngryPig\AngryPig\AngryPig\bin\Windows Phone\Debug\Content\Textures\RedBird.xnb
+C:\Users\ischwart\Documents\Visual Studio 2010\Projects\AngryPig\AngryPig\AngryPig\AngryPig\bin\Windows Phone\Debug\Content\Textures\Background.xnb
+C:\Users\ischwart\Documents\Visual Studio 2010\Projects\AngryPig\AngryPig\AngryPig\AngryPig\bin\Windows Phone\Debug\Content\Textures\Background_logo.xnb
+C:\Users\ischwart\Documents\Visual Studio 2010\Projects\AngryPig\AngryPig\AngryPig\AngryPig\bin\Windows Phone\Debug\AngryPig.dll.config
+C:\Users\ischwart\Documents\Visual Studio 2010\Projects\AngryPig\AngryPig\AngryPig\AngryPig\bin\Windows Phone\Debug\AngryPig.dll
+C:\Users\ischwart\Documents\Visual Studio 2010\Projects\AngryPig\AngryPig\AngryPig\AngryPig\bin\Windows Phone\Debug\AngryPig.pdb
+C:\Users\ischwart\Documents\Visual Studio 2010\Projects\AngryPig\AngryPig\AngryPig\AngryPig\bin\Windows Phone\Debug\AngryPig.Data.dll
+C:\Users\ischwart\Documents\Visual Studio 2010\Projects\AngryPig\AngryPig\AngryPig\AngryPig\bin\Windows Phone\Debug\FarseerPhysicsXNA.dll
+C:\Users\ischwart\Documents\Visual Studio 2010\Projects\AngryPig\AngryPig\AngryPig\AngryPig\bin\Windows Phone\Debug\AngryPig.Data.pdb
+C:\Users\ischwart\Documents\Visual Studio 2010\Projects\AngryPig\AngryPig\AngryPig\AngryPig\obj\Windows Phone\Debug\AngryPig.dll
+C:\Users\ischwart\Documents\Visual Studio 2010\Projects\AngryPig\AngryPig\AngryPig\AngryPig\obj\Windows Phone\Debug\AngryPig.pdb
+C:\Users\ischwart\Documents\Visual Studio 2010\Projects\AngryPig\AngryPig\AngryPig\AngryPig\bin\Windows Phone\Debug\AppManifest.xaml
+C:\Users\ischwart\Documents\Visual Studio 2010\Projects\AngryPig\AngryPig\AngryPig\AngryPig\obj\Windows Phone\Debug\WMAppManifest.xml.g
+C:\Users\ischwart\Documents\Visual Studio 2010\Projects\AngryPig\AngryPig\AngryPig\AngryPig\obj\Windows Phone\Debug\WMAppManifest.xml
+C:\Users\ischwart\Documents\Visual Studio 2010\Projects\AngryPig\AngryPig\AngryPig\AngryPig\bin\Windows Phone\Debug\AngryPig.xap
+C:\Users\ischwart\Documents\Visual Studio 2010\Projects\AngryPig\AngryPig\AngryPig\AngryPig\obj\Windows Phone\Debug\XapCacheFile.xml
+C:\Users\ischwart\Dropbox\Arduino proj\AngryPig\AngryPig\AngryPig\AngryPig\obj\Windows Phone\Debug\Windows Phone Copy of AngryPig.csprojResolveAssemblyReference.cache
+C:\Users\ischwart\Dropbox\Arduino proj\AngryPig\AngryPig\AngryPig\AngryPig\obj\Windows Phone\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\ischwart\Dropbox\Arduino proj\AngryPig\AngryPig\AngryPig\AngryPig\bin\Windows Phone\Debug\Content\Levels\Level.xnb
+C:\Users\ischwart\Dropbox\Arduino proj\AngryPig\AngryPig\AngryPig\AngryPig\bin\Windows Phone\Debug\Content\Textures\RedBird.xnb
+C:\Users\ischwart\Dropbox\Arduino proj\AngryPig\AngryPig\AngryPig\AngryPig\bin\Windows Phone\Debug\Content\Textures\Background.xnb
+C:\Users\ischwart\Dropbox\Arduino proj\AngryPig\AngryPig\AngryPig\AngryPig\bin\Windows Phone\Debug\Content\Textures\Background_logo.xnb
+C:\Users\ischwart\Dropbox\Arduino proj\AngryPig\AngryPig\AngryPig\AngryPig\bin\Windows Phone\Debug\AngryPig.dll.config
+C:\Users\ischwart\Dropbox\Arduino proj\AngryPig\AngryPig\AngryPig\AngryPig\bin\Windows Phone\Debug\AngryPig.dll
+C:\Users\ischwart\Dropbox\Arduino proj\AngryPig\AngryPig\AngryPig\AngryPig\bin\Windows Phone\Debug\AngryPig.pdb
+C:\Users\ischwart\Dropbox\Arduino proj\AngryPig\AngryPig\AngryPig\AngryPig\bin\Windows Phone\Debug\AngryPig.Data.dll
+C:\Users\ischwart\Dropbox\Arduino proj\AngryPig\AngryPig\AngryPig\AngryPig\bin\Windows Phone\Debug\FarseerPhysicsXNA.dll
+C:\Users\ischwart\Dropbox\Arduino proj\AngryPig\AngryPig\AngryPig\AngryPig\bin\Windows Phone\Debug\AngryPig.Data.pdb
+C:\Users\ischwart\Dropbox\Arduino proj\AngryPig\AngryPig\AngryPig\AngryPig\obj\Windows Phone\Debug\AngryPig.dll
+C:\Users\ischwart\Dropbox\Arduino proj\AngryPig\AngryPig\AngryPig\AngryPig\obj\Windows Phone\Debug\AngryPig.pdb
+C:\Users\ischwart\Dropbox\Arduino proj\AngryPig\AngryPig\AngryPig\AngryPig\bin\Windows Phone\Debug\AppManifest.xaml
+C:\Users\ischwart\Dropbox\Arduino proj\AngryPig\AngryPig\AngryPig\AngryPig\obj\Windows Phone\Debug\WMAppManifest.xml.g
+C:\Users\ischwart\Dropbox\Arduino proj\AngryPig\AngryPig\AngryPig\AngryPig\obj\Windows Phone\Debug\WMAppManifest.xml
+bin\Windows Phone\Debug\
+C:\Users\ischwart\Dropbox\Arduino proj\AngryPig\AngryPig\AngryPig\AngryPig\bin\Windows Phone\Debug\AngryPig.xap
+C:\Users\ischwart\Dropbox\Arduino proj\AngryPig\AngryPig\AngryPig\AngryPig\obj\Windows Phone\Debug\XapCacheFile.xml
+C:\Users\ischwart\Dropbox\Arduino proj\AngryPig\AngryPig\AngryPig\AngryPig\bin\Windows Phone\Debug\ServiceReferences.ClientConfig
+C:\Users\ischwart\Dropbox\Arduino proj\AngryPig\AngryPig\AngryPig\AngryPig\bin\Windows Phone\Debug\Content\courier.xnb
+C:\Users\ischwart\Dropbox\Arduino proj\AngryPig\AngryPig\AngryPig\AngryPig\bin\Windows Phone\Debug\AngryPig.xap
+C:\Users\ischwart\Dropbox\Arduino proj\AngryPig\AngryPig\AngryPig\AngryPig\obj\Windows Phone\Debug\XapCacheFile.xml
+C:\Users\ischwart\Dropbox\Arduino proj\AngryPig\AngryPig\AngryPig\AngryPig\bin\Windows Phone\Debug\AppManifest.xaml
+C:\Users\ischwart\Dropbox\Arduino proj\AngryPig\AngryPig\AngryPig\AngryPig\obj\Windows Phone\Debug\WMAppManifest.xml.g
+C:\Users\ischwart\Dropbox\Arduino proj\AngryPig\AngryPig\AngryPig\AngryPig\obj\Windows Phone\Debug\WMAppManifest.xml
+bin\Windows Phone\Debug\

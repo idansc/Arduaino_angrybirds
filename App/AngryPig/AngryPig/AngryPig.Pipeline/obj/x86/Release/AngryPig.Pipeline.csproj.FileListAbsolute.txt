@@ -1,0 +1,7 @@
+C:\Users\ischwart\Dropbox\Arduino proj\AngryPig\AngryPig\AngryPig.Pipeline\bin\x86\Release\AngryPig.Pipeline.dll
+C:\Users\ischwart\Dropbox\Arduino proj\AngryPig\AngryPig\AngryPig.Pipeline\bin\x86\Release\AngryPig.Pipeline.pdb
+C:\Users\ischwart\Dropbox\Arduino proj\AngryPig\AngryPig\AngryPig.Pipeline\bin\x86\Release\AngryPig.Data.dll
+C:\Users\ischwart\Dropbox\Arduino proj\AngryPig\AngryPig\AngryPig.Pipeline\bin\x86\Release\AngryPig.Data.pdb
+C:\Users\ischwart\Dropbox\Arduino proj\AngryPig\AngryPig\AngryPig.Pipeline\obj\x86\Release\AngryPig.Pipeline.csprojResolveAssemblyReference.cache
+C:\Users\ischwart\Dropbox\Arduino proj\AngryPig\AngryPig\AngryPig.Pipeline\obj\x86\Release\AngryPig.Pipeline.dll
+C:\Users\ischwart\Dropbox\Arduino proj\AngryPig\AngryPig\AngryPig.Pipeline\obj\x86\Release\AngryPig.Pipeline.pdb

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="angrydbModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="angrydbEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="HighScores" EntityType="angrydbModel.HighScore" />
+  </EntityContainer>
+  <EntityType Name="HighScore">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="Score" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Score" Type="Int32" Nullable="false" />
+    <Property Name="Time" Type="DateTime" />
+  </EntityType>
+</Schema>

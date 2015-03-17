@@ -1,0 +1,8 @@
+c:\users\ischwart\documents\visual studio 2010\Projects\AngryBirdsAzure\WCFServiceWebRole1\bin\WCFServiceWebRole1.dll
+c:\users\ischwart\documents\visual studio 2010\Projects\AngryBirdsAzure\WCFServiceWebRole1\bin\WCFServiceWebRole1.pdb
+c:\users\ischwart\documents\visual studio 2010\Projects\AngryBirdsAzure\WCFServiceWebRole1\bin\Microsoft.WindowsAzure.Diagnostics.dll
+c:\users\ischwart\documents\visual studio 2010\Projects\AngryBirdsAzure\WCFServiceWebRole1\bin\Microsoft.WindowsAzure.Diagnostics.xml
+c:\users\ischwart\documents\visual studio 2010\Projects\AngryBirdsAzure\WCFServiceWebRole1\obj\Release\WCFServiceWebRole1.dll
+c:\users\ischwart\documents\visual studio 2010\Projects\AngryBirdsAzure\WCFServiceWebRole1\obj\Release\WCFServiceWebRole1.pdb
+C:\Users\ischwart\documents\visual studio 2010\Projects\AngryBirdsAzure\WCFServiceWebRole1\bin\Microsoft.WindowsAzure.Diagnostics.StorageUtility.dll
+C:\Users\ischwart\documents\visual studio 2010\Projects\AngryBirdsAzure\WCFServiceWebRole1\obj\Release\WCFServiceWebRole1.csprojResolveAssemblyReference.cache

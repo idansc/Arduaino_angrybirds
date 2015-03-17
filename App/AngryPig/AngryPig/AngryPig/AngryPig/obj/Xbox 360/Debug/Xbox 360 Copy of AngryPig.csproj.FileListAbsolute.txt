@@ -1,0 +1,14 @@
+C:\Users\yufeih\Desktop\AngryPig\AngryPig\AngryPig\bin\Xbox 360\Debug\Content\Textures\Background.xnb
+C:\Users\yufeih\Desktop\AngryPig\AngryPig\AngryPig\bin\Xbox 360\Debug\AngryPig.exe
+C:\Users\yufeih\Desktop\AngryPig\AngryPig\AngryPig\bin\Xbox 360\Debug\AngryPig.pdb
+C:\Users\yufeih\Desktop\AngryPig\AngryPig\AngryPig\obj\Xbox 360\Debug\ResolveAssemblyReference.cache
+C:\Users\yufeih\Desktop\AngryPig\AngryPig\AngryPig\obj\Xbox 360\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\yufeih\Desktop\AngryPig\AngryPig\AngryPig\obj\Xbox 360\Debug\AngryPig.exe
+C:\Users\yufeih\Desktop\AngryPig\AngryPig\AngryPig\obj\Xbox 360\Debug\AngryPig.pdb
+C:\Users\yufeih\Desktop\AngryPig\AngryPig\AngryPig\bin\Xbox 360\Debug\Content\Textures\Bird.xnb
+C:\Users\yufeih\Desktop\AngryPig\AngryPig\AngryPig\bin\Xbox 360\Debug\Content\Textures\Pig.xnb
+C:\Users\yufeih\Desktop\AngryPig\AngryPig\AngryPig\bin\Xbox 360\Debug\Content\Textures\Brick.xnb
+C:\Users\yufeih\Desktop\AngryPig\AngryPig\AngryPig\bin\Xbox 360\Debug\Content\Levels\Level.xnb
+C:\Users\yufeih\Desktop\AngryPig\AngryPig\AngryPig\bin\Xbox 360\Debug\AngryPig.Data.dll
+C:\Users\yufeih\Desktop\AngryPig\AngryPig\AngryPig\bin\Xbox 360\Debug\FarseerPhysicsXNA.dll
+C:\Users\yufeih\Desktop\AngryPig\AngryPig\AngryPig\bin\Xbox 360\Debug\AngryPig.Data.pdb

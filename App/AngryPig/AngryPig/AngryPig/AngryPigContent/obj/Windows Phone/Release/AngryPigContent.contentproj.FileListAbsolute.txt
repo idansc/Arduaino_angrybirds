@@ -1,0 +1,2 @@
+C:\Users\ischwart\Dropbox\Arduino proj\AngryPig\AngryPig\AngryPig\AngryPigContent\obj\Windows Phone\Release\AngryPigContent.contentprojResolveAssemblyReference.cache
+C:\Users\ischwart\Dropbox\Arduino proj\ארודינו\App\AngryPig\AngryPig\AngryPig\AngryPigContent\obj\Windows Phone\Release\AngryPigContent.contentprojResolveAssemblyReference.cache
